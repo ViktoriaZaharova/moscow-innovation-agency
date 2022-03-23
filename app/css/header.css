@@ -1,0 +1,85 @@
+/*==========  header  ==========*/
+header {
+  padding: 30px 0 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: 1366px;
+  width: 100%;
+  z-index: 3; }
+  header .container {
+    padding: 0 0 0 50px;
+    max-width: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  header .menu {
+    display: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-size: 14px;
+    font-weight: bold; }
+    header .menu li {
+      margin: 0 30px 0 0; }
+      header .menu li:last-child {
+        margin: 0; }
+      header .menu li a {
+        color: #fff; }
+
+.header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0 0 0 auto; }
+  .header-nav .btn {
+    text-transform: uppercase;
+    width: 43px;
+    height: 43px;
+    min-width: 43px; }
+
+.search-wrapper {
+  margin: 0 10px 0 0;
+  position: relative; }
+  .search-wrapper:hover .form-search label {
+    display: block; }
+
+.form-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .form-search label {
+    width: 418px;
+    display: none; }
+  .form-search button {
+    width: 43px;
+    height: 43px;
+    min-width: 43px;
+    padding: 14px 12px; }
+    .form-search button .svg-icon {
+      fill: none;
+      stroke: #DDE8FF; }
+
+.btn-search {
+  color: #DDE8FF;
+  font-size: 13px;
+  padding: 14px 12px;
+  background: transparent; }
+  .btn-search .svg-icon {
+    fill: none;
+    stroke: #DDE8FF; }
+
+/*==========  header end  ==========*/
+/*==========  section  ==========*/
+/*==========  section end  ==========*/

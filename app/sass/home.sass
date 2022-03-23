@@ -1,0 +1,406 @@
+@import "vars"
+
+/*==========  home  ==========*/
+.home
+  padding: 150px 0 46px
+  position: relative
+  z-index: 2
+  .container
+    padding: 0
+
+.home-slider
+  margin: 0 0 39px
+
+.home-wrapper
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  color: #fff
+  padding: 0 0 0 22px
+
+.category-tag
+  letter-spacing: 0.05em
+  font-size: 10px
+  font-weight: 600
+  text-transform: uppercase
+  color: #fff
+  opacity: .5
+  margin: 0 0 3px 50px
+
+
+.link-title
+  position: relative
+  padding: 0 0 0 28px
+  color: #fff
+  font-size: 24px
+  font-weight: 600
+  text-decoration-line: underline
+  max-width: 605px
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 19px
+    height: 32px
+    background: url("../img/icon1.svg") no-repeat center
+      size: 100%
+
+.links-messenger
+  font-size: 15px
+  text-align: right
+  max-width: 215px
+  font-weight: 500
+  a
+    text-decoration: underline
+    display: inline-block
+    color: #fff
+
+/*==========  home end  ==========*/
+
+/*==========  section advantages ==========*/
+.advantages
+  padding: 50px 0 39px
+
+.advantages-box
+  width: 100%
+  height: 129px
+  background: linear-gradient(180deg, #E3E6EF 0%, #E3E6EF 100%)
+  padding: 16px 15px 18px
+  color: #333333
+  font-size: 13px
+  font-weight: bold
+  position: relative
+  z-index: 1
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    bottom: 0
+    width: 100%
+    height: 3px
+    background: #254DF1
+    z-index: -1
+    transition: .3s ease
+  &:hover
+    color: #fff
+    .advantages-box__icon
+      filter: brightness(0) invert(1)
+    &:before
+      height: 100%
+  &__icon
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 0 14px
+    width: 30px
+    height: 33px
+
+
+.advantages-slider
+  .slick-arrow
+    padding: 0
+    width: 18px
+    height: 18px
+    background: transparent
+    &:hover
+      background: transparent
+      stroke: $blue
+  .slick-prev
+    right: auto
+    left: -28px
+  .slick-next
+    right: -28px
+  .slick-list
+    margin: 0 -7px
+  .slick-slide
+    padding: 0 7px
+/*==========  section advantages end  ==========*/
+
+/*==========  section news  ==========*/
+.news-card
+  width: 100%
+  margin-bottom: 30px
+  &__img
+    width: 100%
+    height: 150px
+    display: flex
+    align-items: center
+    justify-content: center
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__body
+    padding: 13px 0 0
+  &__name
+    font-weight: bold
+    font-size: 15px
+    color: #131316
+    margin: 10px 0 13px
+    &:hover
+      color: $accent
+  .box-text
+    color: #333333
+    font-size: 13px
+
+.date
+  color: #808080
+  font-size: 10px
+  font-weight: 600
+  letter-spacing: 0.05em
+  text-transform: uppercase
+
+
+.btn-toggle
+  display: none
+/*==========  section end  ==========*/
+
+/*==========  section banner-section  ==========*/
+.banner-section
+  margin: 50px 0 0
+  .slick-next
+    right: -50px
+  .slick-prev
+    right: 0
+  .home-slider
+    margin: 0
+/*==========  section end  ==========*/
+
+/*==========  section analytics ==========*/
+.analytics
+  padding: 40px 0 48px
+  .title-line
+    margin: 0 0 26px
+
+  h2
+    color: #fff
+
+.analytics-box
+  color: #fff
+  margin: 0 0 16px
+  .news-card__img
+    height: 144px
+  .date
+    color: #fff
+    opacity: .5
+  .news-card__name
+    color: #fff
+
+.list-tags
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  font-size: 10px
+  font-weight: 600
+  letter-spacing: 0.05em
+  text-transform: uppercase
+  li
+    margin: 0 10px 0 0
+    &:last-child
+      margin: 0
+    a
+      color: #E3E6EF
+      opacity: 0.4
+      &:hover
+        color: $accent
+
+/*==========  section analytics end  ==========*/
+
+/*==========  section events ==========*/
+.events
+  padding: 60px 0
+  h2
+    margin: 0 0 29px
+    width: 100%
+
+.events-wrapper
+  width: calc(100% - 217px)
+  padding: 0 39px 0 0
+
+.calendar-sidebar
+  max-width: 217px
+  width: 100%
+
+.events-card
+  width: 100%
+  display: flex
+  align-items: flex-start
+  margin: 0 0 15px
+  &:last-child
+    margin: 0
+  &__img
+    height: 132px
+    width: 230px
+    display: flex
+    align-items: center
+    justify-content: center
+  &__body
+    width: calc(100% - 230px - 22px)
+    margin: 0 0 0 auto
+    border-bottom: 1px solid #E3E6EF
+    padding: 0 0 22px
+  &__name
+    margin: 19px 0 14px
+    font-weight: bold
+    color: #27272D
+    font-size: 17px
+    &:hover
+      color: $blue
+  &__top
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+  .list-tags
+    margin: 0 0 0 22px
+    li
+      a
+        opacity: 1
+        color: #0B38FA
+  .box-text
+    color: #333333
+    font-size: 13px
+    line-height: 19px
+
+.tags
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+
+.tags-links
+  padding: 7px 10px
+  margin: 0 3px 3px 0
+  background: #EAEAEC
+  color: #000000
+  font-size: 10px
+  text-transform: capitalize
+  &:hover
+    background: $blue
+    color: #fff
+  &:last-child
+    margin-right: 0
+  &.active
+    background: $blue
+    color: #fff
+
+.datepicker
+  max-width: 206px
+  width: 100%
+  margin: 0 0 30px auto
+  .ui-widget.ui-widget-content
+    border: none
+      radius: 0
+    width: 100%
+    padding: 0
+
+
+.fixed-block
+  color: #2B2A52
+  width: 100%
+  max-width: 266px
+  z-index: 1
+  left: 0
+  bottom: 0
+  height: 100%
+  background: #E3E6EF
+  position: fixed
+  display: flex
+  flex-direction: column
+  &__top
+    padding: 54px 40px 50px 50px
+  &__bottom
+    margin: auto 0 0
+    border-top: 1px solid #FDFDFD
+    padding: 40px 50px 70px
+  .copyright
+    color: #2B2A52
+    opacity: .4
+    max-width: 140px
+  .list-social
+    margin: 33px 0
+
+.fixed-block-wrapper
+  width: 100%
+  opacity: 0
+
+.menu
+  font-size: 14px
+  font-weight: bold
+  li
+    margin: 0 0 35px
+    a
+      color: #1C1E38
+      &:hover
+        color: $blue
+
+.home-panel
+  position: absolute
+  left: 0
+  top: 0
+  z-index: 2
+  background: #35375e
+  color: #fff
+  height: 100%
+  width: 100%
+  max-width: 266px
+  display: flex
+  flex-direction: column
+  &__top
+    width: 100%
+    padding: 150px 40px 20px 50px
+  &__bottom
+    width: 100%
+    margin: auto 0 0
+    border-top: 1px solid rgba(#FDFDFD, .1)
+    padding: 30px 50px
+  .menu
+    font-size: 14px
+    font-weight: bold
+    li
+      margin: 0 0 30px
+      a
+        color: #fff
+        &:hover
+          color: $blue
+
+  .list-social
+    li
+      a
+        fill: #fff
+
+.address-box
+  font-size: 12px
+  font-weight: bold
+  margin: 0 0 30px
+  line-height: 165.8%
+
+
+/*==========  section end  ==========*/
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
+
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
