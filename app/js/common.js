@@ -38,6 +38,17 @@ $('.btn-burger').on('click', function () {
    $('.fixed-block').fadeToggle();
 });
 
+// tabs
+$(function () {
+
+    $('ul.tabs__caption').on('click', 'li:not(.active)', function () {
+        $(this)
+            .addClass('active').siblings().removeClass('active')
+            .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+    });
+
+});
+
 //Сменим язык календаря на русский
 $.datepicker.setDefaults(
     {
@@ -63,10 +74,13 @@ $(function () {
     $(".datepicker").datepicker();
 });
 
-$(document).scroll(function () {
-    if ($(this).scrollTop() <= ($(".home").offset().top - $(window).height())) {
-        $('.fixed-block-wrapper').css('opacity', 0);
+$(window).scroll(function () {
+    var headerHeight = $('.header').height();
+
+    if ($(this).scrollTop() > headerHeight) {
+        $('.content-wrapper .fixed-block').removeClass('padding-my');
     } else {
-        $('.fixed-block-wrapper').css('opacity', 1);
+        $('.content-wrapper .fixed-block').addClass('padding-my');
     }
 });
+

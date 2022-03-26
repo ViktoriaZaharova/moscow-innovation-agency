@@ -1,6 +1,6 @@
 /*==========  header  ==========*/
 header {
-  padding: 30px 0 30px;
+  padding: 29px 0 26px;
   position: absolute;
   left: 0;
   top: 0;
@@ -79,6 +79,9 @@ header {
   .btn-search .svg-icon {
     fill: none;
     stroke: #DDE8FF; }
+
+.header {
+  background: #35375e; }
 
 /*==========  header end  ==========*/
 /*==========  section  ==========*/

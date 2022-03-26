@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Агенство инноваций Москвы</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+
+<div class="wrapper">
+  <!--### HEADER ###-->
+
+  <div class="right-sidebar">
+    <video loop muted autoplay class="video-bg">
+      <source src="video-bg.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+
+      <h1 class="d-none-tablet">АНАЛИТИЧЕСкИЙ ЦЕНТР</h1>
+
+      <ul class="menu my-ul">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="projects.html">Проекты</a></li>
+        <li><a href="news.html">Новости</a></li>
+        <li><a href="#">Мероприятия</a></li>
+        <li><a href="analytics.html">Аналитика</a></li>
+        <li><a href="about.html">Об Агентстве</a></li>
+      </ul>
+
+      <div class="header-nav">
+        <div class="search-wrapper">
+
+          <form method="post" class="form-search">
+            <label><input type="text" placeholder="Проекты" name="search"></label>
+            <button type="submit" class="btn-search btn-border btn">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#search"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+        <a href="#" class="lang-links btn-border btn">en</a>
+      </div>
+
+      <div class="btn-burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+  <!--### HEADER end ###-->
+
+
+  <div class="content content-wrapper">
+    <!--### SECTION  ###-->
+    <div class="news-section analytics-section">
+      <div class="container">
+        <h1 class="d-flex-tablet">АНАЛИТИЧЕСкИЙ ЦЕНТР</h1>
+        <div class="analytics-text">
+          <div class="row">
+            <div class="col-7">
+              <div class="box-text">
+                <p>Актуальные аналитические материалы об инновационной экосистеме Москвы, тенденциях развития
+                  технологических рынков и обзоры лучших зарубежных практиках, подготовленные Агентством инноваций
+                  Москвы.
+                </p>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="box-text">
+                <p>По вопросам, связанным с аналитикой и исследованиями, обращайтесь по адресу</p>
+                <a href="mailto:research@develop.mos.ru " class="color-blue mail">research@develop.mos.ru </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="home-slider">
+          <div class="slide">
+            <div class="home-slider-item"><img src="img/slide2.jpg" alt=""></div>
+          </div>
+          <div class="slide">
+            <div class="home-slider-item"><img src="img/slide3.jpg" alt=""></div>
+          </div>
+          <div class="slide">
+            <div class="home-slider-item"><img src="img/slide1.jpg" alt=""></div>
+          </div>
+        </div>
+
+        <ul class="list-tags list-tags-variable my-ul">
+          <li><a href="#">#СТАРТАПЫ</a></li>
+          <li><a href="#" class="active">#ИНВЕСТИЦИИ</a></li>
+          <li><a href="#">#ИННОВАЦИОННАЯ_ИНФРАСТРУКТУРА</a></li>
+          <li><a href="#">#КОРПОРАЦИИ</a></li>
+          <li><a href="#">#СТАРТАП-КАФЕ</a></li>
+          <li><a href="#">#СТАТИСТИКА#</a></li>
+          <li><a href="#">#COVID-19</a></li>
+          <li><a href="#">#БЛОКЧЕЙН</a></li>
+          <li><a href="#">#ИСКУССТВЕННЫЙ_ИНТЕЛЛЕКТ</a></li>
+          <li><a href="#">#AGETECH</a></li>
+          <li><a href="#">#AGROTECH</a></li>
+          <li><a href="#">#ASSISTIVETECH</a></li>
+          <li><a href="#">#BEAUTYTECH</a></li>
+          <li><a href="#" class="active">#CLEANTECH</a></li>
+          <li><a href="#">#DATINGTECH</a></li>
+          <li><a href="#">#GAMING</a></li>
+          <li><a href="#">#E-COMMERCE</a></li>
+          <li><a href="#">#EDTECH</a></li>
+          <li class="item-toggle"><a href="#" class="links-toggle">все теги</a></li>
+        </ul>
+
+        <ul class="tags-selected my-ul">
+          <li>
+            <span>ИНВЕСТИЦИИ</span>
+            <a href="#" class="delete-tag"></a>
+          </li>
+          <li>
+            <span>CLEANTECH</span>
+            <a href="#" class="delete-tag"></a>
+          </li>
+        </ul>
+
+        <div class="row">
+          <div class="col-3">
+            <div class="news-card analytics-box">
+              <a href="#" class="news-card__img"><img src="img/analytic1.jpg" alt=""></a>
+              <div class="news-card__body">
+                <div class="date">ЯНВАРЬ 2022
+                </div>
+                <a href="#" class="news-card__name">Киберспорт: анализ рынка и венчурных инвестиций в мире и Москве</a>
+                <div class="box-text">
+                  <ul class="list-tags my-ul">
+                    <li><a href="#">#SPORTSTECH</a></li>
+                    <li><a href="#">#GAMING</a></li>
+                    <li><a href="#">#ИНВЕСТИЦИИ</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="news-card analytics-box">
+              <a href="#" class="news-card__img"><img src="img/analytic2.jpg" alt=""></a>
+              <div class="news-card__body">
+                <div class="date">ОКТЯБРЬ 2021
+                </div>
+                <a href="#" class="news-card__name">Тренды и перспективные направления развития рынка Beauty и Fashion
+                  Tech, советы для стартапов</a>
+                <div class="box-text">
+                  <ul class="list-tags my-ul">
+                    <li><a href="#">#FASHIONTECH</a></li>
+                    <li><a href="#">#BEAUTYTECH</a></li>
+                    <li><a href="#">#СТАРТАП-КАФЕ</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="news-card analytics-box">
+              <a href="#" class="news-card__img"><img src="img/analytic3.jpg" alt=""></a>
+              <div class="news-card__body">
+                <div class="date">ОКТЯБРЬ 2021
+                </div>
+                <a href="#" class="news-card__name">Перспективные технологические направления в индустрии питания в
+                  мире, особенности развития отрасли в Москве</a>
+                <div class="box-text">
+                  <ul class="list-tags my-ul">
+                    <li><a href="#">#AGROTECH</a></li>
+                    <li><a href="#">#FOODTECH</a></li>
+                    <li><a href="#">#СТАРТАПЫ</a></li>
+                    <li><a href="#">#ИНВЕСТИЦИИ</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div class="news-card analytics-box">
+              <a href="#" class="news-card__img"><img src="img/analytics4.jpg" alt=""></a>
+              <div class="news-card__body">
+                <div class="date">октябрь 2021
+                </div>
+                <a href="#" class="news-card__name">Перспективные технологические направления в мире, особенности
+                  развития технологий в строительной отрасли в Москве</a>
+                <div class="box-text">
+                  <ul class="list-tags my-ul">
+                    <li><a href="#">#PROPTECH</a></li>
+                    <li><a href="#">#СТАРТАПЫ</a></li>
+                    <li><a href="#">#ИНВЕСТИЦИИ</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="news-card analytics-box">
+              <a href="#" class="news-card__img"><img src="img/analytics5.jpg" alt=""></a>
+              <div class="news-card__body">
+                <div class="date">июнь 2021
+                </div>
+                <a href="#" class="news-card__name">Сравнение структуры венчурных инвестиций в мире и Москве, детальное
+                  описание сегментов
+                </a>
+                <div class="box-text">
+                  <ul class="list-tags my-ul">
+                    <li><a href="#">#LEGALTECH</a></li>
+                    <li><a href="#">#REGTECH</a></li>
+                    <li><a href="#">#ИНВЕСТИЦИИ</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="news-card analytics-box">
+              <a href="#" class="news-card__img"><img src="img/analytics6.jpg" alt=""></a>
+              <div class="news-card__body">
+                <div class="date">март 2021
+                </div>
+                <a href="#" class="news-card__name">Перспективные технологические направления в мире, особенности
+                  развития транспортной отрасли в Москве
+                </a>
+                <div class="box-text">
+                  <ul class="list-tags my-ul">
+                    <li><a href="#">#TRANSPORT</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div class="news-card analytics-box">
+              <a href="#" class="news-card__img"><img src="img/analytics7.jpg" alt=""></a>
+              <div class="news-card__body">
+                <div class="date">февраль 2021
+                </div>
+                <a href="#" class="news-card__name">Ключевые инвестиционные тренды, перспективные рыночные ниши и
+                  наиболее активные инвесторы Москвы
+                </a>
+                <div class="box-text">
+                  <ul class="list-tags my-ul">
+                    <li><a href="#">#ИНВЕСТИЦИИ</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="news-card analytics-box">
+              <a href="#" class="news-card__img"><img src="img/analytics8.jpg" alt=""></a>
+              <div class="news-card__body">
+                <div class="date">декаБРЬ 2020
+                </div>
+                <a href="#" class="news-card__name">Тренды и перспективные направления развития рынка AgeTech, советы
+                  для стартапов</a>
+                <div class="box-text">
+                  <ul class="list-tags my-ul">
+                    <li><a href="#">#AGETECH</a></li>
+                    <li><a href="#">#СТАРТАП-КАФЕ</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="news-card analytics-box">
+              <a href="#" class="news-card__img"><img src="img/analytics9.jpg" alt=""></a>
+              <div class="news-card__body">
+                <div class="date">декаБРЬ 2020
+                </div>
+                <a href="#" class="news-card__name">Ключевые направления венчурных инвестиций и перспективные
+                  технологические решения в торговле
+                </a>
+                <div class="box-text">
+                  <ul class="list-tags my-ul">
+                    <li><a href="#">##RETAILTECH</a></li>
+                    <li><a href="#">#E-COMMERCE</a></li>
+                    <li><a href="#">#ИНВЕСТИЦИИ</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div class="news-card analytics-box">
+              <a href="#" class="news-card__img"><img src="img/analytics10.jpg" alt=""></a>
+              <div class="news-card__body">
+                <div class="date">ноябРЬ 2020
+                </div>
+                <a href="#" class="news-card__name">Тренды и перспективные направления развития рынка FoodTech, советы
+                  для стартапов
+                </a>
+                <div class="box-text">
+                  <ul class="list-tags my-ul">
+                    <li><a href="#">#SPORTSTECH</a></li>
+                    <li><a href="#">#GAMING</a></li>
+                    <li><a href="#">#ИНВЕСТИЦИИ</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="news-card analytics-box">
+              <a href="#" class="news-card__img"><img src="img/analytics11.jpg" alt=""></a>
+              <div class="news-card__body">
+                <div class="date">ОКТЯБРЬ 2020
+                </div>
+                <a href="#" class="news-card__name">Ключевые инструменты и модели развития внутрикорпоративного
+                  предпринимательства</a>
+                <div class="box-text">
+                  <ul class="list-tags my-ul">
+                    <li><a href="#">#КОРПОРАЦИИ</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="news-card analytics-box">
+              <a href="#" class="news-card__img"><img src="img/analytics12.jpg" alt=""></a>
+              <div class="news-card__body">
+                <div class="date">ОКТЯБРЬ 2020
+                </div>
+                <a href="#" class="news-card__name">Тренды и барьеры развития рынка HR Tech, советы для стартапов</a>
+                <div class="box-text">
+                  <ul class="list-tags my-ul">
+                    <li><a href="#">#HRTECH</a></li>
+                    <li><a href="#">#СТАРТАП-КАФЕ</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="btn btn-border-white d-flex-mobile">Смотреть больше</a>
+        </div>
+
+        <a href="#" class="btn btn-blue btn-toggle-news">Смотреть больше</a>
+      </div>
+    </div>
+    <!--### SECTION END ###-->
+
+    <div class="fixed-block">
+      <div class="fixed-block-wrapper">
+        <div class="fixed-block__top">
+          <form method="post" class="form-search">
+            <label><input type="text" placeholder="Проекты" name="search"></label>
+            <button type="submit" class="btn-search btn-border btn">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#search"></use>
+              </svg>
+            </button>
+          </form>
+          <ul class="menu my-ul">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="projects.html">Проекты</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="#">Мероприятия</a></li>
+            <li><a href="analytics.html">Аналитика</a></li>
+            <li><a href="about.html">Об Агентстве</a></li>
+          </ul>
+        </div>
+        <div class="fixed-block__bottom">
+          <div class="address-box">123242, г. Москва, Новинский бул., 31</div>
+          <ul class="list-social my-ul">
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#telegram"></use>
+              </svg>
+            </a></li>
+          </ul>
+          <div class="copyright">© ГБУ «Агентство инноваций Москвы»
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--### FOOTER ###-->
+  <footer>
+    <div class="container">
+      <ul class="footer-menu my-ul">
+        <li><a href="projects.html" class="font-700">Проекты</a></li>
+        <li><a href="analytics.html" class="font-700">Аналитика</a></li>
+        <li><a href="#" class="font-700">Мероприятия</a></li>
+      </ul>
+
+      <ul class="footer-menu my-ul">
+        <li><a href="news.html" class="font-300">Новости</a></li>
+        <li><a href="about.html" class="font-300">Об Агентстве</a></li>
+      </ul>
+
+      <div class="footer-box">
+        <div class="address">123242, г. Москва, Новинский бул., 31</div>
+
+        <a href="tel:+74992259252" class="phone">+7 (499) 225 9252</a>
+      </div>
+
+      <div class="copyright">
+        <p>© ГБУ "Агентство инноваций Москвы", 2021 г.</p>
+      </div>
+    </div>
+  </footer>
+  <!--### FOOTER END ###-->
+
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+<script src="js/common.js"></script>
+
+</body>
+</html>

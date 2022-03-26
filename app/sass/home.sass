@@ -140,11 +140,21 @@
     font-size: 15px
     color: #131316
     margin: 10px 0 13px
+    max-width: 292px
     &:hover
       color: $accent
   .box-text
     color: #333333
     font-size: 13px
+  .list-tags
+    margin: 20px 0 0
+
+    li
+      a
+        opacity: 1
+        color: $blue
+        &:hover
+          color: $accent
 
 .date
   color: #808080
@@ -198,7 +208,7 @@
   letter-spacing: 0.05em
   text-transform: uppercase
   li
-    margin: 0 10px 0 0
+    margin: 0 5px 0 0
     &:last-child
       margin: 0
     a
@@ -464,26 +474,507 @@
 
 /*==========  section end  ==========*/
 
-/*==========  section  ==========*/
+/*==========  section projects page ==========*/
+.content-wrapper
+  padding: 100px 0 0
+  .fixed-block-wrapper
+    opacity: 1
+  .padding-my
+    padding: 100px 0 0
 
+
+.tabs
+  width: 100%
+
+  &__caption
+    display: flex
+    align-items: flex-start
+    flex-wrap: wrap
+    margin: 0 0 44px
+    li
+      background: #F2F3F7
+      cursor: pointer
+      transition: .3s ease
+      text-align: center
+      padding: 11px 15px
+      color: #374249
+      font-size: 14px
+      border:
+        right: 1px solid #FFFFFF
+      &:last-child
+        border: none
+    .active
+      background: $blue
+      color: #fff
+      border-color: $blue
+
+.projects-section
+  padding: 44px 0
+
+.tabs__content
+  width: 100%
+  display: none
+
+.tabs__content.active
+  display: block
+
+.project-box
+  width: 100%
+  margin: 0 0 50px
+  &__img
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 157px
+    img
+      height: 100%
+      width: 100%
+      object-fit: cover
+  &__body
+    padding: 25px 0 0
+  &__name
+    color: #131316
+    font-size: 18px
+    font-weight: bold
+    margin: 0 0 15px
+  .box-text
+    line-height: 19px
+    font-size: 13px
+    color: #333
+
+/*==========  section projects page end  ==========*/
+
+/*==========  section news page  ==========*/
+.news-section
+  padding: 50px 0
+  position: relative
+  .news-card
+    margin: 0 0 45px
+
+.btn-toggle-news
+  padding: 21px 62px
+  font-size: 11px
+  font-weight: 700
+  position: absolute
+  left: 0
+  bottom: 0
+
+.tags-wrapper
+  width: 100%
+  height: 100%
+  display: flex
+  flex-direction: column
+  background: $blue
+  color: #fff
+  padding: 24px 26px
+  .list-tags
+    font-size: 10px
+    line-height: 200%
+    li
+      a
+        opacity: 1
+        color: #FFFFFF
+  &__top
+    width: 100%
+    margin: 0 0 auto
+  h4
+    margin: 0 0 2px
+    font-size: 15px
+    font-weight: bold
+  &__footer
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 17px 0 0
+    border-top: 1px solid rgba(#fff, .5)
+    width: 100%
+    margin: 15px 0 0
+    p
+      font-size: 12px
+      font-weight: 500
+    .btn-border
+      height: 34px
+      min-width: 118px
+      font-size: 11px
+      border: 1px solid #fff
+      color: #fff
+      &:hover
+        background: #fff
+        color: $blue
+        border: 1px solid $blue
+
+
+
+.news-row
+  margin: 0 0 34px
+  padding: 0 0 35px
+  border-bottom: 0.938462px solid rgba(#A2A6AE, .5)
+
+.news-banner
+  width: 100%
+  height: 100%
+  position: relative
+  &__img
+    height: 100%
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__body
+    position: absolute
+    left: 0
+    bottom: 0
+    z-index: 1
+    padding: 20px 28px
+    max-width: 540px
+  .date
+    margin: 0 37px 0 0
+    color: #fff
+    opacity: .5
+  .list-tags
+    li
+      a
+        opacity: 1
+        color: $blue
+        &:hover
+          color: #fff
+  &__top
+    width: 100%
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+  .box-text
+    color: #fff
+    opacity: .5
+    font-size: 13px
+    line-height: 19px
+  .news-card__name
+    margin: 10px 0 15px
+    color: #fff
+    font-size: 18px
+    font-weight: 600
+    max-width: none
+
+/*==========  section news page end  ==========*/
+
+/*==========  section analytics page ==========*/
+.analytics-text
+  width: 100%
+  margin: 0 0 25px
+  .box-text
+    max-width: 575px
+    font-size: 14px
+    line-height: 20px
+
+.analytics-section
+  padding: 45px 0 165px
+  .news-card__name
+    color: #131316
+  .date
+    color: #131316
+    opacity: .5
+  .home-slider
+    margin: 0 0 26px
+    .slick-next
+      right: -50px
+    .slick-prev
+      right: 0
+  .btn-toggle-news
+    bottom: -165px
+
+.list-tags-variable
+  margin: 0 0 10px
+  line-height: 20px
+  li
+    a
+      opacity: 1
+      color: $blue
+      &.active
+        color: rgb(250, 21, 90)
+    .links-toggle
+      text-decoration: underline
+      color: rgb(162, 166, 174)
+
+.tags-selected
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  margin: 0 0 55px
+  letter-spacing: 0.05em
+  font-size: 10px
+  font-weight: 600
+  line-height: 12px
+  text-transform: uppercase
+  li
+    display: flex
+    align-items: center
+    margin: 0 20px 0 0
+    &:last-child
+      margin: 0
+
+.delete-tag
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  width: 10px
+  height: 10px
+  min-width: 10px
+  margin: 0 0 0 10px
+  &:before, &:after
+    content: ''
+    position: absolute
+    left: 5px
+    top: 0
+    width: 1px
+    height: 100%
+    background: #C4C4C4
+  &:before
+    transform: rotate(45deg)
+  &:after
+    transform: rotate(135deg)
 /*==========  section end  ==========*/
 
-/*==========  section  ==========*/
+/*==========  section contacts page ==========*/
+.map-section
+  width: 100%
+  height: 481px
+  iframe
+    width: 100%
+    height: 100%
 
-/*==========  section end  ==========*/
+.contacts-section
+  position: relative
+  overflow: hidden
+  padding: 70px 0 78px
+  z-index: 1
+  &:before
+    content: ''
+    position: absolute
+    top: -203px
+    right: -201px
+    width: 1088px
+    height: 1056px
+    background: url("../img/contacts-bg.png") no-repeat center
+      size: 100%
+    z-index: -1
+  .phone
+    color: #fff
+    font-size: 65px
+    font-weight: 500
+    margin: 0 0 36px
 
-/*==========  section  ==========*/
+.contacts-item
+  width: 100%
+  margin: 0 0 43px
+  font-size: 16px
+  &:last-child
+    margin: 0
+  a
+    color: #fff
+    font-weight: 600
 
-/*==========  section end  ==========*/
+  h4
+    font-size: 10px
+    font-weight: 600
+    text-transform: uppercase
+    opacity: .4
+    letter-spacing: 0.05em
+    margin: 0 0 5px
+    line-height: 220%
+  span
+    max-width: 200px
+    display: inline-block
 
-/*==========  section  ==========*/
-
-/*==========  section end  ==========*/
+/*==========  section contacts page end  ==========*/
 
 
-/*==========  section  ==========*/
+/*==========  section about ==========*/
+.projects-activity
+  margin: 46px 0 0
+  h2
+    width: 100%
+    margin: 0 0 30px
+  .project-box__img
+    height: 100px
+  .project-box__body
+    padding: 20px 0 0
+  .project-box
+    .box-text
+      p
+        margin: 0 0 15px
+        &:last-child
+          margin: 0
+  .project-box__name
+    margin: 0 0 7px
+  .row
+    position: relative
+    margin-bottom: 44px
+    &:before
+      content: ''
+      position: absolute
+      left: 50%
+      transform: translate(-50%,0)
+      bottom: 0
+      width: calc(100% - 50px)
+      background: #E3E6EF
+      height: 1px
+    &:last-child
+      margin-bottom: 0
+      &:before
+        display: none
 
-/*==========  section end  ==========*/
+.quote-author
+  width: 100%
+  position: relative
+  overflow: hidden
+  z-index: 1
+  background: linear-gradient(270deg, #E3E6EF 5.64%, #E3E6EF 84.35%, rgba(227, 230, 239, 0.21) 100%)
+  .container
+    position: relative
+  &:after
+    content: ''
+    position: absolute
+    background: url("../img/quote-bg.png") no-repeat center
+      size: 100%
+    width: 559px
+    height: 518px
+    right: -100px
+    top: -48px
+    z-index: 1
+  &__img
+    display: flex
+    align-items: center
+    justify-content: center
+    max-width: 599px
+    width: 100%
+    position: absolute
+    left: 0
+    top: 0
+    z-index: -1
+  &:before
+    content: ''
+    position: absolute
+    height: calc(100% + 100px)
+    top: 50%
+    right: 0
+    transform: translate(0,-50%)
+    background: linear-gradient(270deg, #E3E6EF 5.64%, #E3E6EF 84.35%, rgba(227, 230, 239, 0.21) 100%)
+    width: calc(100% - 466px)
+    filter: blur(30px)
+    z-index: 0
+
+.quote-text
+  max-width: 463px
+  margin: 78px 0 74px 400px
+  h3
+    color: #131316
+    font-size: 14px
+    font-weight: bold
+  .box-text
+    line-height: 135%
+    font-size: 15px
+    margin: 0 0 8px
+
+.description-company
+  background: rgba( #E3E6EF, .3)
+  padding: 40px 0
+  .box-text
+    line-height: 19px
+    font-size: 13px
+
+
+.about-section
+  padding-bottom: 3px
+  h3
+    margin: 0 0 25px
+    font-size: 24px
+    font-weight: bold
+  h4
+    margin: 0 0 26px
+    width: 100%
+    font-size: 15px
+    font-weight: bold
+
+.about-diagram
+  position: relative
+  max-width: 559px
+  width: 100%
+  margin: 0 auto
+  &__img
+
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 auto
+
+.about-diagram-item
+  position: absolute
+  font-size: 13px
+  font-weight: 600
+  &:before
+    content: ''
+    position: absolute
+    width: 123px
+    height: 57px
+    right: -123px
+    bottom: -57px
+    background: url("../img/line.svg") no-repeat center
+      size: 100%
+
+  &__icon
+    display: flex
+    align-items: center
+    margin: 0 0 17px
+
+.about-diagram-item1
+  left: -108px
+  max-width: 108px
+  top: 30px
+
+.about-diagram-item2
+  right: -154px
+  max-width: 181px
+  top: 30px
+  &:before
+    width: 146px
+    right: auto
+    left: -171px
+    background: url("../img/line2.svg") no-repeat center
+      size: 100%
+    bottom: -20px
+
+.about-diagram-item3
+  left: -74px
+  max-width: 120px
+  bottom: 70px
+  &:before
+    width: 117px
+    height: 61px
+    right: -130px
+    background: url("../img/line3.svg") no-repeat center
+      size: 100%
+    bottom: 40px
+
+.about-diagram-item4
+  right: -173px
+  max-width: 213px
+  bottom: 70px
+  &:before
+    width: 123px
+    right: auto
+    left: -145px
+    background: url("../img/line4.svg") no-repeat center
+      size: 100%
+    top: 0
+/*==========  section about end  ==========*/
 
 /*==========  section  ==========*/
 
