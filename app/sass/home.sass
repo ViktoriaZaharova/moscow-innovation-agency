@@ -11,6 +11,9 @@
 .home-slider
   margin: 0 0 39px
 
+  .slide-mob
+    display: none
+
 .home-wrapper
   width: 100%
   display: flex
@@ -198,6 +201,11 @@
     opacity: .5
   .news-card__name
     color: #fff
+  .list-tags
+    li
+      a
+        color: #E3E6EF
+        opacity: .4
 
 .list-tags
   display: flex
@@ -306,7 +314,7 @@
     width: 100%
     padding: 0
   .ui-datepicker .ui-datepicker-header
-    padding: 0
+    padding: 0 10px
     background: transparent
     border: none
       radius: 0
@@ -366,12 +374,13 @@
     letter-spacing: 0.16em
     font-size: 10px
     font-weight: bold
+    font-family: $default-font
     text-transform: uppercase
     color: #000000
     background: transparent
     padding: 0
-    width: 100%
-    height: 19px
+    width: 21px
+    height: 17px
     display: flex
     align-items: center
     justify-content: center
@@ -400,7 +409,7 @@
   bottom: 0
   height: 100%
   background: #E3E6EF
-  position: fixed
+  position: absolute
   display: flex
   flex-direction: column
   &__top
@@ -415,10 +424,13 @@
     max-width: 140px
   .list-social
     margin: 33px 0
+  .form-search
+    display: none
+  &.fixed
+    position: fixed
 
 .fixed-block-wrapper
   width: 100%
-  opacity: 0
 
 .menu
   font-size: 14px
@@ -435,7 +447,7 @@
   left: 0
   top: 0
   z-index: 2
-  background: #35375e
+  background: #23234e
   color: #fff
   height: 100%
   width: 100%
@@ -802,7 +814,7 @@
     width: 100%
     margin: 0 0 30px
   .project-box__img
-    height: 100px
+    height: auto
   .project-box__body
     padding: 20px 0 0
   .project-box
@@ -914,20 +926,12 @@
     align-items: center
     justify-content: center
     margin: 0 auto
+    position: relative
 
 .about-diagram-item
   position: absolute
   font-size: 13px
   font-weight: 600
-  &:before
-    content: ''
-    position: absolute
-    width: 123px
-    height: 57px
-    right: -123px
-    bottom: -57px
-    background: url("../img/line.svg") no-repeat center
-      size: 100%
 
   &__icon
     display: flex
@@ -943,37 +947,42 @@
   right: -154px
   max-width: 181px
   top: 30px
-  &:before
-    width: 146px
-    right: auto
-    left: -171px
-    background: url("../img/line2.svg") no-repeat center
-      size: 100%
-    bottom: -20px
+
 
 .about-diagram-item3
   left: -74px
   max-width: 120px
   bottom: 70px
-  &:before
-    width: 117px
-    height: 61px
-    right: -130px
-    background: url("../img/line3.svg") no-repeat center
-      size: 100%
-    bottom: 40px
+
 
 .about-diagram-item4
   right: -173px
   max-width: 213px
   bottom: 70px
-  &:before
-    width: 123px
-    right: auto
-    left: -145px
-    background: url("../img/line4.svg") no-repeat center
-      size: 100%
-    top: 0
+
+
+.diagram-line
+  position: absolute
+
+.diagram-line1
+  top: 110px
+  left: 13px
+  max-width: 123px
+
+.diagram-line2
+  top: 82px
+  right: 57px
+  max-width: 146px
+
+.diagram-line3
+  bottom: 120px
+  left: 58px
+  max-width: 117px
+
+.diagram-line4
+  bottom: 137px
+  right: 57px
+  max-width: 123px
 /*==========  section about end  ==========*/
 
 /*==========  section  ==========*/

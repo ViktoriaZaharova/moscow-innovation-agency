@@ -129,14 +129,6 @@
   .about-diagram
     max-width: 450px
 
-  .about-diagram-item3:before
-    width: 100px
-    right: -110px
-
-  .about-diagram-item2:before
-    width: 120px
-    left: -130px
-
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px)
   .events-wrapper
@@ -151,6 +143,29 @@
   .datepicker
     margin: 0 0 20px
     max-width: 324px
+
+  .datepicker .ui-state-default, .datepicker .ui-widget-content .ui-state-default, .datepicker .ui-widget-header .ui-state-default, .datepicker .ui-button, .datepicker html .ui-button.ui-state-disabled:hover, .datepicker html .ui-button.ui-state-disabled:active
+    line-height: 15px
+    font-size: 13px
+    width: 30px
+    height: 24px
+
+  .datepicker .ui-datepicker .ui-datepicker-header
+    padding: 0 20px
+
+  .datepicker .ui-datepicker .ui-datepicker-prev, .datepicker .ui-datepicker .ui-datepicker-next
+    width: 9px
+    height: 17px
+
+  .datepicker .ui-datepicker th
+    font-size: 13px
+    padding: 14px 0
+
+  .tags-links
+    padding: 10px 30px
+    font-size: 12px
+    line-height: 14px
+
 
   .events
     padding: 23px 0 40px
@@ -168,7 +183,7 @@
     padding: 0 12px
 
   footer
-    padding: 42px 0 34px
+    padding: 42px 0 50px
 
 
   .footer-box
@@ -176,7 +191,9 @@
 
   .banner-section
     margin: 0
-
+    .home-slider
+      width: 100%
+      margin: 0
     .slick-next
       right: 0
 
@@ -320,8 +337,8 @@
     justify-content: space-between
 
     &__img
-      max-width: 100%
-      margin: 0 auto
+      max-width: 590px
+      margin: -60px auto -80px
 
   .about-diagram-item
     position: relative
@@ -330,17 +347,21 @@
     right: 0
     bottom: 0
 
-  .about-diagram-item3:before
-    bottom: auto
-    top: -40px
-    right: -80px
-    transform: rotate(-30deg)
+  .diagram-line1
+    top: 80px
+    left: 80px
 
-  .about-diagram-item4:before
-    top: -30px
-    left: -120px
-    transform: rotate(30deg)
+  .diagram-line2
+    right: 80px
+    top: 80px
 
+  .diagram-line3
+    left: 60px
+    bottom: 100px
+
+  .diagram-line4
+    right: 90px
+    bottom: 130px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 680px)
@@ -382,10 +403,10 @@
     margin: 0
 
   .footer-menu:first-child
-    margin: 0 auto 0 0
+    margin: 0 77px 0 0
 
   .events-card
-    margin: 0 0 24px
+    margin: 0 0 35px
     flex-direction: column
     align-items: flex-start
 
@@ -400,6 +421,8 @@
 
     &__name
       margin: 8px 0 6px
+      font-size: 15px
+      line-height: 120%
 
   .col-3, .col-5, .col-7
     width: 100%
@@ -408,8 +431,6 @@
   .row
     margin: 0
 
-  .analytics-box
-    margin: 0 0 49px
 
   .title-line
     margin: 0 0 18px
@@ -446,19 +467,21 @@
 
   .home-slider-item
     width: 100%
-    height: 316px
+    //height: 316px
     display: flex
     align-items: flex-start
     position: relative
 
     img
-      //width: 100%
-      height: 100%
-      //object-fit: cover
-      position: absolute
-      left: 0
-      top: 0
-      max-width: none
+      //height: 100%
+      //position: absolute
+      //left: 0
+      //top: 0
+      //max-width: none
+      display: none
+    .slide-mob
+      display: block
+      width: 100%
 
   h1
     letter-spacing: 0.07em
@@ -523,7 +546,8 @@
         padding: 12px 0 0
 
       &__img
-        height: 109px
+        height: auto
+
 
       &__name
         font-size: 15px
@@ -532,41 +556,104 @@
     &__img
       width: 599px
 
-  .about-diagram-item:before
-    transform: rotate(40deg)
-    right: 0
-    bottom: -80px
-    width: 80px
+  .about-diagram__img
+    max-width: 450px
+    margin: -30px auto
 
-  .about-diagram-item2:before
-    transform: rotate(-40deg)
-    left: 40px
-    width: 100px
-
-  .about-diagram-item3:before
-    transform: rotate(150deg)
-    top: -60px
-
-  .about-diagram-item4:before
+  .diagram-line1
     left: 30px
-    top: -60px
+    top: 50px
+
+  .diagram-line2
+    right: 40px
+
+  .diagram-line3
+    bottom: 60px
+    left: 30px
+
+  .diagram-line4
+    right: 60px
+    bottom: 70px
+
+  .right-sidebar
+    display: none
+
+  .link-title
+    padding: 0
+    &:before
+      left: -18px
+
+  .category-tag
+    margin-left: 0
+
+  .news-card
+    margin: 0 0 44px
+    &__name
+      margin: 10px 0
+
+  .analytics
+    .btn-toggle
+      margin: -18px 0 0
+
+
+  .btn-toggle
+    display: flex
+
+  .news
+    margin: 0 0 42px
+    .btn-toggle
+      margin: -20px 0 0
+
+  .datepicker .ui-datepicker .ui-datepicker-header
+    padding: 0 15px
+
 
 
 @media only screen and (max-width: 480px)
   .about-diagram__img
     width: 400px
     min-width: 400px
-    margin: 0 auto -30px
+    margin: 0 auto -10px
 
-  .about-diagram-item:before
-    width: 90px
-    right: 10px
-    bottom: -90px
+  .diagram-line
+    img
+      display: none
 
-  .about-diagram-item2:before
-    left: 30px
-    bottom: -90px
-    width: 110px
+  .diagram-line1
+    width: 45px
+    height: 88px
+    top: 7px
+    left: 82px
+    background: url("../img/line1-mob.svg") no-repeat center
+      size: 100%
+
+  .diagram-line2
+    background: url("../img/line2-mob.svg") no-repeat center
+      size: 100%
+    top: 10px
+    right: 111px
+    width: 46px
+    height: 81px
+
+  .diagram-line3
+    background: url("../img/line3-mob.svg") no-repeat center
+      size: 100%
+    bottom: 12px
+    left: 97px
+    width: 42px
+    height: 97px
+
+  .diagram-line4
+    background: url("../img/line4-mob.svg") no-repeat center
+      size: 100%
+    bottom: 13px
+    right: 118px
+    width: 49px
+    height: 119px
+
+  .analytics-box .list-tags
+    margin: 10px 0 0
+
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px)
@@ -581,8 +668,7 @@
 
   .about-diagram-item3
     max-width: 109px
-    &:before
-      right: -5px
+
 
   .about-diagram-item4
     max-width: 163px
@@ -590,6 +676,16 @@
 
   .about-diagram__img
     margin: 0 -30px -30px
+
+  .banner-section
+    .home-slider-item
+      height: 131px
+      display: flex
+      align-items: center
+      justify-content: center
+      img
+        height: 100%
+        object-fit: cover
 
 @media only screen and (max-width: 360px)
   .about-diagram__img
