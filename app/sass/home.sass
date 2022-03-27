@@ -489,10 +489,10 @@
 /*==========  section projects page ==========*/
 .content-wrapper
   padding: 100px 0 0
-  .fixed-block-wrapper
-    opacity: 1
   .padding-my
     padding: 100px 0 0
+  .fixed-block
+    position: fixed
 
 
 .tabs
@@ -698,6 +698,12 @@
       right: 0
   .btn-toggle-news
     bottom: -165px
+  .analytics-box
+    .list-tags
+      li
+        a
+          opacity: 1
+          color: $blue
 
 .list-tags-variable
   margin: 0 0 10px
@@ -867,7 +873,7 @@
     max-width: 599px
     width: 100%
     position: absolute
-    left: 0
+    left: -50px
     top: 0
     z-index: -1
   &:before
