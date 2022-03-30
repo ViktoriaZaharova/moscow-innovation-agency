@@ -288,8 +288,6 @@
       -ms-flex-align: start;
           align-items: flex-start;
   margin: 0 0 15px; }
-  .events-card:last-child {
-    margin: 0; }
   .events-card__img {
     height: 132px;
     width: 230px;
@@ -333,6 +331,9 @@
     font-size: 13px;
     line-height: 19px; }
 
+.events-card-last .events-card__body {
+  border: none; }
+
 .tags {
   width: 100%;
   display: -webkit-box;
@@ -364,11 +365,14 @@
   max-width: 206px;
   width: 100%;
   margin: 0 0 30px auto; }
+  .datepicker td {
+    padding: 1px; }
   .datepicker .ui-widget.ui-widget-content {
     border: none;
       border-radius: 0;
     width: 100%;
-    padding: 0; }
+    padding: 0;
+    background: transparent; }
   .datepicker .ui-datepicker .ui-datepicker-header {
     padding: 0 10px;
     background: transparent;
@@ -464,14 +468,24 @@
     background: #254DF1;
     color: #fff; }
   .datepicker .ui-state-highlight, .datepicker .ui-widget-content .ui-state-highlight, .datepicker .ui-widget-header .ui-state-highlight {
-    background: rgba(37, 77, 241, 0.1);
-    color: #000000; }
+    background: #254DF1;
+    color: #fff; }
   .datepicker .ui-datepicker-week-end .ui-state-default {
     color: #E83223; }
   .datepicker .ui-datepicker-week-end span {
     color: #E83223; }
   .datepicker .ui-datepicker-year {
     display: none; }
+  .datepicker .ui-datepicker-unselectable {
+    opacity: 1;
+    color: #000000;
+    cursor: pointer !important;
+    pointer-events: auto; }
+    .datepicker .ui-datepicker-unselectable .ui-state-default {
+      background: rgba(0, 61, 252, 0.1);
+      opacity: 1;
+      color: #000000;
+      pointer-events: auto; }
 
 .fixed-block {
   color: #2B2A52;
@@ -651,6 +665,8 @@
   position: relative; }
   .news-section .news-card {
     margin: 0 0 45px; }
+  .news-section .btn-toggle-news {
+    bottom: -50px; }
 
 .btn-toggle-news {
   padding: 21px 62px;
@@ -1119,5 +1135,203 @@
   max-width: 123px; }
 
 /*==========  section about end  ==========*/
-/*==========  section  ==========*/
-/*==========  section end  ==========*/
+/*==========  article page  ==========*/
+.article-section {
+  padding: 44px 0 36px; }
+
+.other-news {
+  padding: 38px 0 10px;
+  background: rgba(227, 230, 239, 0.35); }
+
+.article-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.news-sidebar {
+  max-width: 300px;
+  width: 100%; }
+  .news-sidebar h3 {
+    margin: 0 0 24px;
+    font-size: 20px;
+    color: #313548;
+    font-weight: 600;
+    line-height: 120%; }
+
+.last-news {
+  width: 100%;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(39, 39, 45, 0.2); }
+  .last-news__name {
+    margin: 15px 0 0;
+    font-size: 15px;
+    font-weight: 600;
+    color: #131316; }
+    .last-news__name:hover {
+      color: #254DF1; }
+
+.last-news-end {
+  border: none; }
+
+.tags-box {
+  margin: 40px 0 0; }
+  .tags-box h4 {
+    margin: 0 0 8px;
+    font-size: 15px;
+    font-weight: bold; }
+  .tags-box .list-tags-variable {
+    margin: 0; }
+
+.article-content {
+  width: calc(100% - 300px);
+  padding: 0 50px 0 0;
+  color: #131316; }
+  .article-content h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 17px; }
+  .article-content .title-line {
+    margin: 0 0 24px; }
+  .article-content .list-tags li a {
+    opacity: 1;
+    color: #254DF1; }
+  .article-content .box-text {
+    font-size: 14px;
+    line-height: 20px; }
+    .article-content .box-text p {
+      margin: 0 0 23px; }
+      .article-content .box-text p:last-child {
+        margin: 0; }
+  .article-content h4 {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 18px; }
+
+.article-footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 50px 0 0; }
+
+.schedule {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .schedule p {
+    margin: 0 0 0 10px;
+    text-transform: uppercase;
+    color: #131316;
+    letter-spacing: 0.1em;
+    font-size: 10px;
+    line-height: 20px; }
+
+.schedule-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .schedule-list li {
+    margin: 0 -1px 0 0; }
+    .schedule-list li:last-child {
+      margin: 0; }
+    .schedule-list li a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      height: 35px;
+      width: 43px;
+      border: 1px solid #EAEDF2; }
+      .schedule-list li a:hover {
+        background: #EAEDF2; }
+
+.article-img {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 27px; }
+  .article-img img {
+    width: 100%; }
+
+/*==========  article page end  ==========*/
+/*==========  events page  ==========*/
+.events-form {
+  margin: 30px 0 0; }
+  .events-form .btn {
+    margin: 60px 0 0;
+    height: 51px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600; }
+  .events-form .btn-border {
+    color: #254DF1; }
+
+.events-list li {
+  margin: 0 0 27px; }
+  .events-list li:last-child {
+    margin: 0; }
+
+.events-list span {
+  margin: 0 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 10px;
+  font-weight: 600;
+  color: #808080;
+  line-height: 12px;
+  display: block; }
+
+.events-list p {
+  font-size: 15px;
+  color: #131316;
+  font-weight: 600;
+  line-height: 18px; }
+
+.other-events {
+  padding: 37px 0 68px; }
+  .other-events .calendar-sidebar {
+    max-width: 295px; }
+  .other-events .events-wrapper {
+    width: calc(100% - 295px); }
+  .other-events .datepicker {
+    max-width: none; }
+
+.btn-calendar {
+  max-width: 229px;
+  width: 100%;
+  font-size: 12px;
+  font-weight: 600;
+  background: transparent; }
+
+/*==========  events page end  ==========*/

@@ -20,7 +20,7 @@
     left: -70px
 
 
-@media only screen and (max-width: 1300px)
+
   .container
     max-width: calc(100% - 200px)
 
@@ -53,6 +53,12 @@
   header
     .container
       padding-left: 20px
+
+  .other-events
+    .calendar-sidebar
+      max-width: 220px
+    .events-wrapper
+      width: calc(100% - 220px)
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px)
@@ -170,6 +176,16 @@
   .diagram-line4
     bottom: 110px
 
+  .news-sidebar
+    max-width: 260px
+
+  .article-content
+    width: calc(100% - 260px)
+
+  .events-form
+    margin: 0
+    .btn
+      margin: 30px 0 0
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px)
@@ -413,6 +429,21 @@
 
   .content-wrapper .fixed-block-wrapper
     padding: 0
+
+  .article-content
+    padding: 0
+    width: 100%
+
+  .news-sidebar
+    margin: 30px 0 0
+    width: 100%
+    max-width: none
+
+  .other-events
+    .calendar-sidebar
+      max-width: none
+    .events-wrapper
+      width: 100%
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 680px)
@@ -669,6 +700,9 @@
   .projects-section
     padding: 28px 0
 
+  .other-news
+    margin: 0
+
 @media only screen and (max-width: 480px)
   .about-diagram__img
     width: 400px
@@ -714,7 +748,15 @@
   .analytics-box .list-tags
     margin: 10px 0 0
 
+  .schedule p
+    width: 100%
+    margin: 5px 0 0
 
+  .news-sidebar h3
+    margin: 0 0 15px
+
+  .article-content h3
+    font-size: 22px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px)

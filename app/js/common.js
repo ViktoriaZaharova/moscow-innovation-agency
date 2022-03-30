@@ -77,7 +77,25 @@ $.datepicker.setDefaults(
     });
 
 $(function () {
-    $(".datepicker").datepicker();
+    var holidays = [
+        [1,3],
+        [12,3],
+        [16,3],
+        [8,3],
+        [18,3],
+        [29,3],
+    ];
+
+    $(".datepicker").datepicker({
+        beforeShowDay: function(date){
+            for (var i = 0; i < holidays.length; i++) {
+                if (holidays[i][0] == date.getDate() && holidays[i][1] - 1 == date.getMonth()) {
+                    return [false];
+                }
+            }
+            return [true];
+        }
+    });
 });
 
 $(window).scroll(function () {

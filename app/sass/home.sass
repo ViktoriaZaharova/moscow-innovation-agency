@@ -260,8 +260,7 @@
   display: flex
   align-items: flex-start
   margin: 0 0 15px
-  &:last-child
-    margin: 0
+
   &__img
     height: 132px
     width: 230px
@@ -295,6 +294,10 @@
     font-size: 13px
     line-height: 19px
 
+.events-card-last
+  .events-card__body
+    border: none
+
 .tags
   width: 100%
   display: flex
@@ -321,11 +324,14 @@
   max-width: 206px
   width: 100%
   margin: 0 0 30px auto
+  td
+    padding: 1px
   .ui-widget.ui-widget-content
     border: none
       radius: 0
     width: 100%
     padding: 0
+    background: transparent
   .ui-datepicker .ui-datepicker-header
     padding: 0 10px
     background: transparent
@@ -402,8 +408,8 @@
     background: #254DF1
     color: #fff
   .ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight
-    background: rgba($blue, .1)
-    color: #000000
+    background: $blue
+    color: #fff
   .ui-datepicker-week-end
     .ui-state-default
       color: #E83223
@@ -412,6 +418,16 @@
       color: #E83223
   .ui-datepicker-year
     display: none
+  .ui-datepicker-unselectable
+    opacity: 1
+    color: #000000
+    cursor: pointer !important
+    pointer-events: auto
+    .ui-state-default
+      background: rgba(#003DFC, .1)
+      opacity: 1
+      color: #000000
+      pointer-events: auto
 
 .fixed-block
   color: #2B2A52
@@ -579,6 +595,8 @@
   position: relative
   .news-card
     margin: 0 0 45px
+  .btn-toggle-news
+    bottom: -50px
 
 .btn-toggle-news
   padding: 21px 62px
@@ -1007,6 +1025,179 @@
   max-width: 123px
 /*==========  section about end  ==========*/
 
-/*==========  section  ==========*/
+/*==========  article page  ==========*/
+.article-section
+  padding: 44px 0 36px
 
-/*==========  section end  ==========*/
+.other-news
+  padding: 38px 0 10px
+  background: rgba(#E3E6EF, .35)
+
+.article-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+
+.news-sidebar
+  max-width: 300px
+  width: 100%
+  h3
+    margin: 0 0 24px
+    font-size: 20px
+    color: #313548
+    font-weight: 600
+    line-height: 120%
+
+
+.last-news
+  width: 100%
+  padding: 16px 0
+  border-bottom: 1px solid rgba(#27272D, .2)
+  &__name
+    margin: 15px 0 0
+    font-size: 15px
+    font-weight: 600
+    color: #131316
+    &:hover
+      color: $blue
+
+.last-news-end
+  border: none
+
+.tags-box
+  margin: 40px 0 0
+  h4
+    margin: 0 0 8px
+    font-size: 15px
+    font-weight: bold
+  .list-tags-variable
+    margin: 0
+
+.article-content
+  width: calc(100% - 300px)
+  padding: 0 50px 0 0
+  color: #131316
+  h3
+    font-size: 24px
+    font-weight: bold
+    margin: 0 0 17px
+  .title-line
+    margin: 0 0 24px
+
+  .list-tags
+    li
+      a
+        opacity: 1
+        color: $blue
+  .box-text
+    font-size: 14px
+    line-height: 20px
+    p
+      margin: 0 0 23px
+      &:last-child
+        margin: 0
+  h4
+    font-weight: bold
+    font-size: 14px
+    line-height: 20px
+    margin: 0 0 18px
+
+.article-footer
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 50px 0 0
+
+.schedule
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  p
+    margin: 0 0 0 10px
+    text-transform: uppercase
+    color: #131316
+    letter-spacing: 0.1em
+    font-size: 10px
+    line-height: 20px
+
+
+
+.schedule-list
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  li
+    margin: 0 -1px 0 0
+    &:last-child
+      margin: 0
+    a
+      display: flex
+      align-items: center
+      justify-content: center
+      height: 35px
+      width: 43px
+      border: 1px solid #EAEDF2
+      &:hover
+        background: #EAEDF2
+
+.article-img
+  width: 100%
+  display: flex
+  align-items: center
+  margin: 0 0 27px
+  img
+    width: 100%
+/*==========  article page end  ==========*/
+
+
+/*==========  events page  ==========*/
+.events-form
+  margin: 30px 0 0
+  .btn
+    margin: 60px 0 0
+    height: 51px
+    width: 100%
+    font-size: 14px
+    font-weight: 600
+  .btn-border
+    color: #254DF1
+
+.events-list
+  li
+    margin: 0 0 27px
+    &:last-child
+      margin: 0
+  span
+    margin: 0 0 8px
+    text-transform: uppercase
+    letter-spacing: 0.05em
+    font-size: 10px
+    font-weight: 600
+    color: #808080
+    line-height: 12px
+    display: block
+  p
+    font-size: 15px
+    color: #131316
+    font-weight: 600
+    line-height: 18px
+
+.other-events
+  padding: 37px 0 68px
+  .calendar-sidebar
+    max-width: 295px
+  .events-wrapper
+    width: calc(100% - 295px)
+  .datepicker
+    max-width: none
+
+.btn-calendar
+  max-width: 229px
+  width: 100%
+  font-size: 12px
+  font-weight: 600
+  background: transparent
+
+/*==========  events page end  ==========*/
