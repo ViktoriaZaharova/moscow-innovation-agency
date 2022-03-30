@@ -12,6 +12,12 @@ $('.advantages-slider').slick({
     nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
     responsive: [
         {
+            breakpoint: 1130,
+            settings: {
+                slidesToShow: 5,
+            }
+        },
+        {
             breakpoint: 992,
             settings: {
                 slidesToShow: 4,
@@ -78,9 +84,9 @@ $(window).scroll(function () {
     var headerHeight = $('.header').height();
 
     if ($(this).scrollTop() > headerHeight) {
-        $('.content-wrapper .fixed-block').removeClass('padding-my');
+        $('.content-wrapper .fixed-block-wrapper').addClass('padding-my');
     } else {
-        $('.content-wrapper .fixed-block').addClass('padding-my');
+        $('.content-wrapper .fixed-block-wrapper').removeClass('padding-my');
     }
 });
 
