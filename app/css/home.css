@@ -582,7 +582,9 @@
 .content-wrapper {
   padding: 100px 0 0; }
   .content-wrapper .fixed-block-wrapper {
-    padding: 100px 0 0; }
+    padding: 100px 0 0;
+    -webkit-transition: .4s ease;
+    transition: .4s ease; }
   .content-wrapper .fixed-block {
     position: fixed; }
   .content-wrapper .padding-my {
@@ -653,6 +655,8 @@
     font-size: 18px;
     font-weight: bold;
     margin: 0 0 15px; }
+    .project-box__name:hover {
+      color: #254DF1; }
   .project-box .box-text {
     line-height: 19px;
     font-size: 13px;

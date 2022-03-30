@@ -432,3 +432,29 @@ h2 {
   font-weight: bold; }
   .mail:hover {
     color: #2B2A52; }
+
+.breadcrumb {
+  width: 100%;
+  margin: 10px 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 14px;
+  font-weight: 500; }
+  .breadcrumb li {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 20px 0 0; }
+    .breadcrumb li a {
+      text-decoration: underline;
+      color: #254df2; }
+      .breadcrumb li a:hover {
+        color: #254DF1; }
+      .breadcrumb li a.active {
+        color: #fa155a; }

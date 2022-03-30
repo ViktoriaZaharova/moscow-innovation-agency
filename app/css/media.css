@@ -1,14 +1,16 @@
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1400px) {
-  .home .container, header .container {
+  .home .container {
     padding: 0 50px; }
+  header .container {
+    padding: 0 50px 0 24px; }
   .home-panel, .fixed-block {
     max-width: 200px; }
     .home-panel__top, .home-panel__bottom, .fixed-block__top, .fixed-block__bottom {
       padding-left: 20px; }
   h1 {
-    margin: 0 0 0 20px; }
+    margin: 0 0 0 90px; }
   .quote-author__img {
     left: -70px; }
   .container {
@@ -29,20 +31,6 @@
     width: 78%; }
   .analytics-box .news-card__img {
     height: auto; }
-  header .container {
-    padding-left: 20px; }
-  .other-events .calendar-sidebar {
-    max-width: 220px; }
-  .other-events .events-wrapper {
-    width: calc(100% - 220px); } }
-
-/* Medium Devices, Desktops */
-@media only screen and (max-width: 992px) {
-  .video-bg {
-    max-width: 1442px;
-    height: 1635px;
-    right: 0;
-    top: 0; }
   .wrapper {
     max-width: 100%; }
   .home-panel, .fixed-block {
@@ -58,6 +46,18 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+  .other-events .calendar-sidebar {
+    max-width: 220px; }
+  .other-events .events-wrapper {
+    width: calc(100% - 220px); } }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .video-bg {
+    max-width: 1442px;
+    height: 1635px;
+    right: 0;
+    top: 0; }
   h1 {
     font-size: 17px; }
   .quote-author:before {
@@ -130,7 +130,13 @@
   .events-form {
     margin: 0; }
     .events-form .btn {
-      margin: 30px 0 0; } }
+      margin: 30px 0 0; }
+  .footer-box {
+    margin: 0 0 0 20px; }
+  .footer-menu:first-child {
+    margin: 0 20px 0 0; }
+  .organizations-item {
+    margin: 0 0 0 15px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -335,7 +341,16 @@
   .other-events .calendar-sidebar {
     max-width: none; }
   .other-events .events-wrapper {
-    width: 100%; } }
+    width: 100%; }
+  .news-section {
+    padding: 28px 0 50px; }
+  .tabs__caption li {
+    margin-bottom: 1px; }
+  .organizations {
+    width: 100%;
+    margin: 20px 0 0; }
+  .breadcrumb li {
+    margin-bottom: 3px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 680px) {
@@ -531,7 +546,9 @@
   .projects-section {
     padding: 28px 0; }
   .other-news {
-    margin: 0; } }
+    margin: 0; }
+  .organizations {
+    display: none; } }
 
 @media only screen and (max-width: 480px) {
   .about-diagram__img {
