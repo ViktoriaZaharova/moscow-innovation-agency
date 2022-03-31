@@ -264,6 +264,9 @@ strong, b {
   padding: 0 50px;
   margin: 0 0 0 auto; }
 
+.w-100 {
+  width: 100%; }
+
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -449,12 +452,17 @@ h2 {
   .breadcrumb li {
     width: -webkit-fit-content;
     width: -moz-fit-content;
-    width: fit-content;
-    margin: 0 20px 0 0; }
+    width: fit-content; }
     .breadcrumb li a {
-      text-decoration: underline;
-      color: #254df2; }
+      color: #374249;
+      font-size: 14px;
+      background: #F2F3F7;
+      text-align: center;
+      padding: 11px 15px;
+      border-right: 1px solid #FFFFFF; }
       .breadcrumb li a:hover {
-        color: #254DF1; }
+        color: #fff;
+        background: #254DF1; }
       .breadcrumb li a.active {
-        color: #fa155a; }
+        color: #fff;
+        background: #254DF1; }

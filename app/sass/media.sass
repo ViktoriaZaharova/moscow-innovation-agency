@@ -30,6 +30,40 @@
 
 
 
+@media only screen and (max-width: 1366px)
+  .wrapper
+    max-width: 100%
+
+  .home-panel, .fixed-block
+    display: none
+
+
+  .container
+    max-width: 100%
+
+  header
+    .container
+      padding-left: 50px
+    .logo
+      margin: 0
+    .menu
+      margin: 0 auto
+      display: flex
+      li
+        margin: 0 20px 0 0
+
+  .video-bg
+    display: none
+
+  .right-sidebar
+    max-width: 100%
+    background: url("../img/bg1.png") no-repeat center
+      size: 100%
+
+  h1
+    margin: 0 0 0 20px
+    letter-spacing: 0.04em
+
 @media only screen and (max-width: 1200px)
   .d-none-tablet
     display: none
@@ -38,9 +72,9 @@
     display: block
 
   h1
-    margin: 0 0 20px
     color: #212448
     width: 100%
+    margin: 0 0 20px
 
   .contacts-section
     h1
@@ -53,25 +87,6 @@
     .news-card__img
       height: auto
 
-
-  .wrapper
-    max-width: 100%
-
-  .home-panel, .fixed-block
-    display: none
-
-  .container
-    max-width: 100%
-
-  header
-    .container
-      padding-left: 50px
-    .logo
-      margin: 0
-
-    .menu
-      margin: 0 auto
-      display: flex
 
   .other-events
     .calendar-sidebar
@@ -572,9 +587,7 @@
     height: 574px
     top: 54px
 
-  .video-bg
-    max-width: none
-    height: 100%
+
 
   .home-slider-item
     width: 100%
