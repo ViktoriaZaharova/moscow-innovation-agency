@@ -5,18 +5,23 @@
   padding: 150px 0 46px
   position: relative
   z-index: 2
+
   .container
     padding: 0
 
 .home-slider
   margin: 0 0 39px
+
   .slick-track
     display: flex
     align-items: stretch
+
   .slick-slide
     height: auto
+
   .home-slider-item
     height: 100%
+
     img
       width: 100%
       height: 100%
@@ -52,6 +57,7 @@
   font-weight: 600
   text-decoration-line: underline
   max-width: 605px
+
   &:before
     content: ''
     position: absolute
@@ -67,6 +73,7 @@
   text-align: right
   max-width: 215px
   font-weight: 500
+
   a
     text-decoration: underline
     display: inline-block
@@ -88,6 +95,7 @@
   font-weight: bold
   position: relative
   z-index: 1
+
   &:before
     content: ''
     position: absolute
@@ -98,12 +106,16 @@
     background: #254DF1
     z-index: -1
     transition: .3s ease
+
   &:hover
     color: #fff
+
     .advantages-box__icon
       filter: brightness(0) invert(1)
+
     &:before
       height: 100%
+
   &__icon
     display: flex
     align-items: center
@@ -119,16 +131,21 @@
     width: 18px
     height: 18px
     background: transparent
+
     &:hover
       background: transparent
       stroke: $blue
+
   .slick-prev
     right: auto
     left: -28px
+
   .slick-next
     right: -28px
+
   .slick-list
     margin: 0 -7px
+
   .slick-slide
     padding: 0 7px
 /*==========  section advantages end  ==========*/
@@ -137,29 +154,36 @@
 .news-card
   width: 100%
   margin-bottom: 30px
+
   &__img
     width: 100%
     height: 150px
     display: flex
     align-items: center
     justify-content: center
+
     img
       width: 100%
       height: 100%
       object-fit: cover
+
   &__body
     padding: 13px 0 0
+
   &__name
     font-weight: bold
     font-size: 15px
     color: #131316
     margin: 10px 0 13px
     max-width: 292px
+
     &:hover
       color: #254DF1
+
   .box-text
     color: #333333
     font-size: 13px
+
   .list-tags
     margin: 20px 0 0
 
@@ -167,6 +191,7 @@
       a
         opacity: 1
         color: $blue
+
         &:hover
           color: $accent
 
@@ -185,10 +210,13 @@
 /*==========  section banner-section  ==========*/
 .banner-section
   margin: 50px 0 0
+
   .slick-next
     right: -50px
+
   .slick-prev
     right: 0
+
   .home-slider
     margin: 0
 /*==========  section end  ==========*/
@@ -196,6 +224,7 @@
 /*==========  section analytics ==========*/
 .analytics
   padding: 40px 0 48px
+
   .title-line
     margin: 0 0 26px
 
@@ -205,15 +234,20 @@
 .analytics-box
   color: #fff
   margin: 0 0 16px
+
   .news-card__img
     height: 144px
+
   .date
     color: #fff
     opacity: .5
+
   .news-card__name
     color: #fff
+
     &:hover
       text-decoration: underline
+
   .list-tags
     li
       a
@@ -228,13 +262,17 @@
   font-weight: 600
   letter-spacing: 0.05em
   text-transform: uppercase
+
   li
     margin: 0 5px 0 0
+
     &:last-child
       margin: 0
+
     a
       color: #E3E6EF
       opacity: 0.4
+
       &:hover
         color: $accent
 
@@ -243,6 +281,7 @@
 /*==========  section events ==========*/
 .events
   padding: 60px 0
+
   h2
     margin: 0 0 29px
     width: 100%
@@ -267,28 +306,35 @@
     display: flex
     align-items: center
     justify-content: center
+
   &__body
     width: calc(100% - 230px - 22px)
     margin: 0 0 0 auto
     border-bottom: 1px solid #E3E6EF
     padding: 0 0 22px
+
   &__name
     margin: 19px 0 14px
     font-weight: bold
     color: #27272D
     font-size: 17px
+
     &:hover
       color: $blue
+
   &__top
     display: flex
     align-items: center
     flex-wrap: wrap
+
   .list-tags
     margin: 0 0 0 22px
+
     li
       a
         opacity: 1
         color: #0B38FA
+
   .box-text
     color: #333333
     font-size: 13px
@@ -311,11 +357,14 @@
   color: #000000
   font-size: 10px
   text-transform: capitalize
+
   &:hover
     background: $blue
     color: #fff
+
   &:last-child
     margin-right: 0
+
   &.active
     background: $blue
     color: #fff
@@ -324,14 +373,17 @@
   max-width: 206px
   width: 100%
   margin: 0 0 30px auto
+
   td
     padding: 1px
+
   .ui-widget.ui-widget-content
     border: none
       radius: 0
     width: 100%
     padding: 0
     background: transparent
+
   .ui-datepicker .ui-datepicker-header
     padding: 0 10px
     background: transparent
@@ -349,6 +401,7 @@
     font-weight: bold
     line-height: 18px
     margin: 0 auto
+
   .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next
     left: 0
     right: 0
@@ -367,16 +420,20 @@
 
     span
       display: none
+
   .ui-datepicker .ui-datepicker-prev
     background: url("../img/arrow-left.svg") no-repeat center
       size: 100%
+
   .ui-datepicker .ui-datepicker-next
     background: url("../img/arrow-right.svg") no-repeat center
       size: 100%
     order: 1
+
   .ui-datepicker table
     margin: 6px 0 0
     font-family: $default-font
+
   .ui-datepicker th
     padding: 12px 0
     text-align: center
@@ -386,6 +443,7 @@
     color: #27272D
     opacity: .3
     text-transform: lowercase
+
   .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active
     border: none
     text-align: center
@@ -404,25 +462,32 @@
     align-items: center
     justify-content: center
     margin: 0 auto
+
   .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover
     background: #254DF1
     color: #fff
+
   .ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight
     background: $blue
     color: #fff
+
   .ui-datepicker-week-end
     .ui-state-default
       color: #E83223
+
   .ui-datepicker-week-end
     span
       color: #E83223
+
   .ui-datepicker-year
     display: none
+
   .ui-datepicker-unselectable
     opacity: 1
     color: #000000
     cursor: pointer !important
     pointer-events: auto
+
     .ui-state-default
       background: rgba(#003DFC, .1)
       opacity: 1
@@ -441,20 +506,26 @@
   position: absolute
   display: flex
   flex-direction: column
+
   &__top
     padding: 54px 40px 50px 50px
+
   &__bottom
     margin: auto 0 0
     border-top: 1px solid #FDFDFD
     padding: 40px 50px 70px
+
   .copyright
     color: #2B2A52
     opacity: .4
     max-width: 140px
+
   .list-social
     margin: 33px 0
+
   .form-search
     display: none
+
   &.fixed
     position: fixed
 
@@ -464,10 +535,13 @@
 .menu
   font-size: 14px
   font-weight: bold
+
   li
     margin: 0 0 35px
+
     a
       color: #1C1E38
+
       &:hover
         color: $blue
 
@@ -483,21 +557,27 @@
   max-width: 266px
   display: flex
   flex-direction: column
+
   &__top
     width: 100%
     padding: 150px 40px 20px 50px
+
   &__bottom
     width: 100%
     margin: auto 0 0
     border-top: 1px solid rgba(#FDFDFD, .1)
     padding: 30px 50px
+
   .menu
     font-size: 14px
     font-weight: bold
+
     li
       margin: 0 0 30px
+
       a
         color: #fff
+
         &:hover
           color: $blue
 
@@ -518,14 +598,16 @@
 /*==========  section projects page ==========*/
 .content-wrapper
   padding: 100px 0 0
+
   .fixed-block-wrapper
     padding: 100px 0 0
     transition: .4s ease
+
   .fixed-block
     position: fixed
+
   .padding-my
     padding: 0
-
 
 
 .tabs
@@ -536,6 +618,7 @@
     align-items: flex-start
     flex-wrap: wrap
     margin: 0 0 44px
+
     li
       background: #F2F3F7
       cursor: pointer
@@ -546,8 +629,10 @@
       font-size: 14px
       border:
         right: 1px solid #FFFFFF
+
       &:last-child
         border: none
+
     .active
       background: $blue
       color: #fff
@@ -566,6 +651,7 @@
 .project-box
   width: 100%
   margin: 0 0 50px
+
   &__img
     width: 100%
     display: flex
@@ -576,15 +662,19 @@
       height: 100%
       width: 100%
       object-fit: cover
+
   &__body
     padding: 25px 0 0
+
   &__name
     color: #131316
     font-size: 18px
     font-weight: bold
     margin: 0 0 15px
+
     &:hover
       color: $blue
+
   .box-text
     line-height: 19px
     font-size: 13px
@@ -596,8 +686,10 @@
 .news-section
   padding: 50px 0
   position: relative
+
   .news-card
     margin: 0 0 45px
+
   .btn-toggle-news
     bottom: -50px
 
@@ -617,20 +709,25 @@
   background: $blue
   color: #fff
   padding: 24px 26px
+
   .list-tags
     font-size: 10px
     line-height: 200%
+
     li
       a
         opacity: 1
         color: #FFFFFF
+
   &__top
     width: 100%
     margin: 0 0 auto
+
   h4
     margin: 0 0 2px
     font-size: 15px
     font-weight: bold
+
   &__footer
     display: flex
     align-items: center
@@ -639,20 +736,22 @@
     border-top: 1px solid rgba(#fff, .5)
     width: 100%
     margin: 15px 0 0
+
     p
       font-size: 12px
       font-weight: 500
+
     .btn-border
       height: 34px
       min-width: 118px
       font-size: 11px
       border: 1px solid #fff
       color: #fff
+
       &:hover
         background: #fff
         color: $blue
         border: 1px solid $blue
-
 
 
 .news-row
@@ -664,16 +763,19 @@
   width: 100%
   height: 100%
   position: relative
+
   &__img
     height: 100%
     width: 100%
     display: flex
     align-items: center
     justify-content: center
+
     img
       width: 100%
       height: 100%
       object-fit: cover
+
   &__body
     position: absolute
     left: 0
@@ -681,27 +783,33 @@
     z-index: 1
     padding: 20px 28px
     max-width: 540px
+
   .date
     margin: 0 37px 0 0
     color: #fff
     opacity: .5
+
   .list-tags
     li
       a
         opacity: 1
         color: $blue
+
         &:hover
           color: #fff
+
   &__top
     width: 100%
     display: flex
     align-items: center
     flex-wrap: wrap
+
   .box-text
     color: #fff
     opacity: .5
     font-size: 13px
     line-height: 19px
+
   .news-card__name
     margin: 10px 0 15px
     color: #fff
@@ -715,6 +823,7 @@
 .analytics-text
   width: 100%
   margin: 0 0 25px
+
   .box-text
     max-width: 575px
     font-size: 14px
@@ -722,19 +831,26 @@
 
 .analytics-section
   padding: 45px 0 165px
+
   .news-card__name
     color: #131316
+
   .date
     color: #131316
     opacity: .5
+
   .home-slider
     margin: 0 0 26px
+
     .slick-next
       right: -50px
+
     .slick-prev
       right: 0
+
   .btn-toggle-news
     bottom: -165px
+
   .analytics-box
     .list-tags
       li
@@ -745,12 +861,15 @@
 .list-tags-variable
   margin: 0 0 10px
   line-height: 20px
+
   li
     a
       opacity: 1
       color: $blue
+
       &.active
         color: rgb(250, 21, 90)
+
     .links-toggle
       text-decoration: underline
       color: rgb(162, 166, 174)
@@ -766,10 +885,12 @@
   font-weight: 600
   line-height: 12px
   text-transform: uppercase
+
   li
     display: flex
     align-items: center
     margin: 0 20px 0 0
+
     &:last-child
       margin: 0
 
@@ -782,6 +903,7 @@
   height: 10px
   min-width: 10px
   margin: 0 0 0 10px
+
   &:before, &:after
     content: ''
     position: absolute
@@ -790,8 +912,10 @@
     width: 1px
     height: 100%
     background: #C4C4C4
+
   &:before
     transform: rotate(45deg)
+
   &:after
     transform: rotate(135deg)
 /*==========  section end  ==========*/
@@ -800,6 +924,7 @@
 .map-section
   width: 100%
   height: 481px
+
   iframe
     width: 100%
     height: 100%
@@ -809,6 +934,7 @@
   overflow: hidden
   padding: 70px 0 78px
   z-index: 1
+
   &:before
     content: ''
     position: absolute
@@ -819,6 +945,7 @@
     background: url("../img/contacts-bg.png") no-repeat center
       size: 100%
     z-index: -1
+
   .phone
     color: #fff
     font-size: 65px
@@ -829,8 +956,10 @@
   width: 100%
   margin: 0 0 43px
   font-size: 16px
+
   &:last-child
     margin: 0
+
   a
     color: #fff
     font-weight: 600
@@ -843,6 +972,7 @@
     letter-spacing: 0.05em
     margin: 0 0 5px
     line-height: 220%
+
   span
     max-width: 200px
     display: inline-block
@@ -853,35 +983,45 @@
 /*==========  section about ==========*/
 .projects-activity
   margin: 46px 0 0
+
   h2
     width: 100%
     margin: 0 0 30px
+
   .project-box__img
     height: auto
+
   .project-box__body
     padding: 20px 0 0
+
   .project-box
     .box-text
       p
         margin: 0 0 15px
+
         &:last-child
           margin: 0
+
   .project-box__name
     margin: 0 0 7px
+
   .row
     position: relative
     margin-bottom: 44px
+
     &:before
       content: ''
       position: absolute
       left: 50%
-      transform: translate(-50%,0)
+      transform: translate(-50%, 0)
       bottom: 0
       width: calc(100% - 50px)
       background: #E3E6EF
       height: 1px
+
     &:last-child
       margin-bottom: 0
+
       &:before
         display: none
 
@@ -891,8 +1031,10 @@
   overflow: hidden
   z-index: 1
   background: linear-gradient(270deg, #E3E6EF 5.64%, #E3E6EF 84.35%, rgba(227, 230, 239, 0.21) 100%)
+
   .container
     position: relative
+
   &:after
     content: ''
     position: absolute
@@ -903,6 +1045,7 @@
     right: -100px
     top: -48px
     z-index: 1
+
   &__img
     display: flex
     align-items: center
@@ -913,13 +1056,14 @@
     left: -50px
     top: 0
     z-index: -1
+
   &:before
     content: ''
     position: absolute
     height: calc(100% + 100px)
     top: 50%
     right: 0
-    transform: translate(0,-50%)
+    transform: translate(0, -50%)
     background: linear-gradient(270deg, #E3E6EF 5.64%, #E3E6EF 84.35%, rgba(227, 230, 239, 0.21) 100%)
     width: calc(100% - 466px)
     filter: blur(30px)
@@ -928,18 +1072,21 @@
 .quote-text
   max-width: 463px
   margin: 78px 0 74px 400px
+
   h3
     color: #131316
     font-size: 14px
     font-weight: bold
+
   .box-text
     line-height: 135%
     font-size: 15px
     margin: 0 0 8px
 
 .description-company
-  background: rgba( #E3E6EF, .3)
+  background: rgba(#E3E6EF, .3)
   padding: 40px 0
+
   .box-text
     line-height: 19px
     font-size: 13px
@@ -947,10 +1094,12 @@
 
 .about-section
   padding-bottom: 3px
+
   h3
     margin: 0 0 25px
     font-size: 24px
     font-weight: bold
+
   h4
     margin: 0 0 26px
     width: 100%
@@ -962,6 +1111,7 @@
   max-width: 559px
   width: 100%
   margin: 0 auto
+
   &__img
 
     width: 100%
@@ -1045,6 +1195,7 @@
 .news-sidebar
   max-width: 300px
   width: 100%
+
   h3
     margin: 0 0 24px
     font-size: 20px
@@ -1057,11 +1208,13 @@
   width: 100%
   padding: 16px 0
   border-bottom: 1px solid rgba(#27272D, .2)
+
   &__name
     margin: 15px 0 0
     font-size: 15px
     font-weight: 600
     color: #131316
+
     &:hover
       color: $blue
 
@@ -1070,10 +1223,12 @@
 
 .tags-box
   margin: 40px 0 0
+
   h4
     margin: 0 0 8px
     font-size: 15px
     font-weight: bold
+
   .list-tags-variable
     margin: 0
 
@@ -1081,10 +1236,12 @@
   width: calc(100% - 300px)
   padding: 0 50px 0 0
   color: #131316
+
   h3
     font-size: 24px
     font-weight: bold
     margin: 0 0 17px
+
   .title-line
     margin: 0 0 24px
 
@@ -1093,13 +1250,17 @@
       a
         opacity: 1
         color: $blue
+
   .box-text
     font-size: 14px
     line-height: 20px
+
     p
       margin: 0 0 23px
+
       &:last-child
         margin: 0
+
   h4
     font-weight: bold
     font-size: 14px
@@ -1117,6 +1278,7 @@
   display: flex
   align-items: center
   flex-wrap: wrap
+
   p
     margin: 0 0 0 10px
     text-transform: uppercase
@@ -1126,15 +1288,17 @@
     line-height: 20px
 
 
-
 .schedule-list
   display: flex
   align-items: stretch
   flex-wrap: wrap
+
   li
     margin: 0 -1px 0 0
+
     &:last-child
       margin: 0
+
     a
       display: flex
       align-items: center
@@ -1142,6 +1306,7 @@
       height: 35px
       width: 43px
       border: 1px solid #EAEDF2
+
       &:hover
         background: #EAEDF2
 
@@ -1150,6 +1315,7 @@
   display: flex
   align-items: center
   margin: 0 0 27px
+
   img
     width: 100%
 /*==========  article page end  ==========*/
@@ -1157,21 +1323,35 @@
 
 /*==========  events page  ==========*/
 .events-form
-  margin: 30px 0 0
+  margin: 18px 0 0
+  border-top: 1px solid rgba(#27272D, .2)
+  padding: 26px 0 0
+
   .btn
     margin: 60px 0 0
     height: 51px
     width: 100%
     font-size: 14px
     font-weight: 600
+
   .btn-border
     color: #254DF1
+
+  .datepicker
+    max-width: none
+    width: 100%
+    margin: 0
+
+.date-events
+  margin: 0 0 25px
 
 .events-list
   li
     margin: 0 0 27px
+
     &:last-child
       margin: 0
+
   span
     margin: 0 0 8px
     text-transform: uppercase
@@ -1181,6 +1361,7 @@
     color: #808080
     line-height: 12px
     display: block
+
   p
     font-size: 15px
     color: #131316
@@ -1189,10 +1370,13 @@
 
 .other-events
   padding: 37px 0 68px
+
   .calendar-sidebar
     max-width: 295px
+
   .events-wrapper
     width: calc(100% - 295px)
+
   .datepicker
     max-width: none
 
@@ -1202,5 +1386,250 @@
   font-size: 12px
   font-weight: 600
   background: transparent
+
+.event-content
+  width: 100%
+
+  .home-slider
+    width: 100%
+    margin: 0 0 50px
+    .slick-next
+      right: -50px
+
+    .slick-prev
+      right: 0
+
+.events-section
+  padding-bottom: 50px
+
+.event-line
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+  margin: 0 0 20px
+
+.events-tab
+  display: flex
+  align-items: stretch
+
+.events-tab-link
+  padding: 11px 14px
+  display: flex
+  align-items: center
+  color: #374249
+  font-size: 14px
+  background: #EAEAEC
+  height: 39px
+
+  &:hover
+    color: #fff
+    background: $blue
+
+    .events-tab-link__icon
+      stroke: #fff
+
+  &__icon
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 14px
+    height: 14px
+    min-width: 14px
+    fill: none
+    stroke: #374249
+    margin: 0 9px 0 0
+
+  &.active
+    background: $blue
+    color: #fff
+
+    .events-tab-link__icon
+      stroke: #fff
+
+.event-filter
+  display: flex
+  align-items: stretch
+
+  &-link
+    display: flex
+    align-items: center
+    padding: 11px 17px
+    height: 39px
+    background: #EAEAEC
+    font-size: 14px
+    color: #374249
+
+    &:hover
+      color: #fff
+      background: $blue
+
+    &.active
+      background: $blue
+      color: #fff
+
+.event-box
+  width: 100%
+  margin: 0 0 40px
+  &__img
+    width: 100%
+    height: 150px
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__body
+    width: 100%
+    padding: 12px 0 0
+  &__top
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+    margin: 0 0 11px
+  .list-tags
+    li
+      a
+        color: $blue
+        opacity: 1
+  &__date
+    color: #808080
+    font-size: 10px
+    font-weight: 600
+    letter-spacing: 0.05em
+    text-align: right
+    text-transform: uppercase
+  &__name
+    color: #131316
+    font-size: 15px
+    font-weight: 700
+    &:hover
+      color: $accent
+
+.navigation-page
+  display: flex
+  align-items: center
+  font-size: 14px
+  color: $blue
+  &-val
+    margin: 0 13px
+    display: block
+
+.navigation-page-link
+  display: flex
+  align-items: center
+  justify-content: center
+  background: $blue
+  fill: none
+  stroke: #fff
+  width: 39px
+  height: 39px
+  min-width: 39px
+  padding: 11px
+
+.event-calendar
+  width: 100%
+  margin: 18px 0 30px
+
+.event-calendar-head
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  justify-content: space-between
+  margin: 0 0 22px
+
+.event-calendar__title
+  font-size: 18px
+  font-weight: bold
+  color: #374249
+  text-align: center
+  margin: 0 auto
+  text-transform: uppercase
+
+.event-calendar-nav
+  display: flex
+  align-items: center
+  color: #131316
+  font-size: 14px
+  font-weight: 500
+  text-transform: uppercase
+  &__icon
+    display: flex
+    align-items: center
+    justify-content: center
+    fill: none
+    margin: 0 5px 0 0
+    width: 12px
+    height: 12px
+    stroke: #131316
+
+.event-calendar-next
+  .event-calendar-nav__icon
+    order: 1
+    margin: 0 0 0 5px
+
+.event-calendar-body
+  width: 100%
+  border: 1.01626px solid #EAEAEA
+  .tr
+    width: 100%
+    display: flex
+    align-items: stretch
+    border-bottom: 1.01626px solid #EAEAEA
+    &:last-child
+      border: none
+  .td
+    flex: 1
+    min-height: 138px
+    position: relative
+    border-right: 1.01626px solid #EAEAEA
+    &:last-child
+      border: none
+
+.event-calendar-date
+  position: absolute
+  right: 8px
+  top: 8px
+  color: #374249
+  font-size: 14px
+  font-weight: 600
+
+.event-calendar-date__prev
+  color: #C4C4C4
+
+.event-calendar-date__holiday
+  color: #E83223
+
+.event-calendar-date__next
+  opacity: 0.3
+
+.event-calendar-box
+  width: 100%
+  height: 100%
+  background: #E6ECFF
+  color: #27272D
+  font-size: 10px
+  font-weight: bold
+  padding: 30px 8px 10px
+  &:hover
+    color: $accent
+  &__img
+    width: 100%
+    height: 71px
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    margin: 0 0 5px
+    img
+      width: 100%
+
 
 /*==========  events page end  ==========*/

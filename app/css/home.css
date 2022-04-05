@@ -1291,7 +1291,9 @@
 /*==========  article page end  ==========*/
 /*==========  events page  ==========*/
 .events-form {
-  margin: 30px 0 0; }
+  margin: 18px 0 0;
+  border-top: 1px solid rgba(39, 39, 45, 0.2);
+  padding: 26px 0 0; }
   .events-form .btn {
     margin: 60px 0 0;
     height: 51px;
@@ -1300,6 +1302,13 @@
     font-weight: 600; }
   .events-form .btn-border {
     color: #254DF1; }
+  .events-form .datepicker {
+    max-width: none;
+    width: 100%;
+    margin: 0; }
+
+.date-events {
+  margin: 0 0 25px; }
 
 .events-list li {
   margin: 0 0 27px; }
@@ -1337,5 +1346,320 @@
   font-size: 12px;
   font-weight: 600;
   background: transparent; }
+
+.event-content {
+  width: 100%; }
+  .event-content .home-slider {
+    width: 100%;
+    margin: 0 0 50px; }
+    .event-content .home-slider .slick-next {
+      right: -50px; }
+    .event-content .home-slider .slick-prev {
+      right: 0; }
+
+.events-section {
+  padding-bottom: 50px; }
+
+.event-line {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 0 20px; }
+
+.events-tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch; }
+
+.events-tab-link {
+  padding: 11px 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #374249;
+  font-size: 14px;
+  background: #EAEAEC;
+  height: 39px; }
+  .events-tab-link:hover {
+    color: #fff;
+    background: #254DF1; }
+    .events-tab-link:hover .events-tab-link__icon {
+      stroke: #fff; }
+  .events-tab-link__icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 14px;
+    height: 14px;
+    min-width: 14px;
+    fill: none;
+    stroke: #374249;
+    margin: 0 9px 0 0; }
+  .events-tab-link.active {
+    background: #254DF1;
+    color: #fff; }
+    .events-tab-link.active .events-tab-link__icon {
+      stroke: #fff; }
+
+.event-filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch; }
+  .event-filter-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 11px 17px;
+    height: 39px;
+    background: #EAEAEC;
+    font-size: 14px;
+    color: #374249; }
+    .event-filter-link:hover {
+      color: #fff;
+      background: #254DF1; }
+    .event-filter-link.active {
+      background: #254DF1;
+      color: #fff; }
+
+.event-box {
+  width: 100%;
+  margin: 0 0 40px; }
+  .event-box__img {
+    width: 100%;
+    height: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    overflow: hidden; }
+    .event-box__img img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
+  .event-box__body {
+    width: 100%;
+    padding: 12px 0 0; }
+  .event-box__top {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0 0 11px; }
+  .event-box .list-tags li a {
+    color: #254DF1;
+    opacity: 1; }
+  .event-box__date {
+    color: #808080;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-align: right;
+    text-transform: uppercase; }
+  .event-box__name {
+    color: #131316;
+    font-size: 15px;
+    font-weight: 700; }
+    .event-box__name:hover {
+      color: #2B2A52; }
+
+.navigation-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  color: #254DF1; }
+  .navigation-page-val {
+    margin: 0 13px;
+    display: block; }
+
+.navigation-page-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #254DF1;
+  fill: none;
+  stroke: #fff;
+  width: 39px;
+  height: 39px;
+  min-width: 39px;
+  padding: 11px; }
+
+.event-calendar {
+  width: 100%;
+  margin: 18px 0 30px; }
+
+.event-calendar-head {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 0 22px; }
+
+.event-calendar__title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #374249;
+  text-align: center;
+  margin: 0 auto;
+  text-transform: uppercase; }
+
+.event-calendar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #131316;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase; }
+  .event-calendar-nav__icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    fill: none;
+    margin: 0 5px 0 0;
+    width: 12px;
+    height: 12px;
+    stroke: #131316; }
+
+.event-calendar-next .event-calendar-nav__icon {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  margin: 0 0 0 5px; }
+
+.event-calendar-body {
+  width: 100%;
+  border: 1.01626px solid #EAEAEA; }
+  .event-calendar-body .tr {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    border-bottom: 1.01626px solid #EAEAEA; }
+    .event-calendar-body .tr:last-child {
+      border: none; }
+  .event-calendar-body .td {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    min-height: 138px;
+    position: relative;
+    border-right: 1.01626px solid #EAEAEA; }
+    .event-calendar-body .td:last-child {
+      border: none; }
+
+.event-calendar-date {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  color: #374249;
+  font-size: 14px;
+  font-weight: 600; }
+
+.event-calendar-date__prev {
+  color: #C4C4C4; }
+
+.event-calendar-date__holiday {
+  color: #E83223; }
+
+.event-calendar-date__next {
+  opacity: 0.3; }
+
+.event-calendar-box {
+  width: 100%;
+  height: 100%;
+  background: #E6ECFF;
+  color: #27272D;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 30px 8px 10px; }
+  .event-calendar-box:hover {
+    color: #2B2A52; }
+  .event-calendar-box__img {
+    width: 100%;
+    height: 71px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    overflow: hidden;
+    margin: 0 0 5px; }
+    .event-calendar-box__img img {
+      width: 100%; }
 
 /*==========  events page end  ==========*/

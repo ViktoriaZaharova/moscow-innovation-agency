@@ -466,3 +466,12 @@ h2 {
       .breadcrumb li a.active {
         color: #fff;
         background: #254DF1; }
+
+.links-prev {
+  text-align: right;
+  color: #0B38FA;
+  font-weight: 500;
+  font-size: 15px;
+  text-decoration: underline; }
+  .links-prev:hover {
+    color: #2B2A52; }

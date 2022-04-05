@@ -196,7 +196,7 @@
     width: calc(100% - 260px)
 
   .events-form
-    margin: 0
+    margin: 20px 0 0
     .btn
       margin: 30px 0 0
 
@@ -483,6 +483,18 @@
   .breadcrumb
     li
       margin-bottom: 3px
+      
+  .links-prev
+    text-align: left
+
+  .event-content
+    .home-slider
+      margin: 0 0 30px
+      .slick-prev
+        right: 38px
+      .slick-next
+        right: 0
+      
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 680px)
   .quote-author
@@ -508,6 +520,11 @@
   .quote-text
     margin: 323px auto 30px
     max-width: none
+
+  .event-calendar-body
+    overflow-x: auto
+    .td
+      min-width: 120px
 
 
 @media only screen and (max-width: 576px)
@@ -693,10 +710,6 @@
   .right-sidebar
     display: none
 
-  //.home
-  //  background: url("../img/bg1-mobile.png") no-repeat center
-  //    size: cover
-
   .link-title
     padding: 0
     &:before
@@ -741,6 +754,10 @@
 
   .organizations
     display: none
+
+  .event-filter
+    width: 100%
+    margin: 10px 0 0
 
 @media only screen and (max-width: 480px)
   .about-diagram__img
@@ -827,6 +844,11 @@
       img
         height: 100%
         object-fit: cover
+
+  .event-calendar__title
+    width: 100%
+    margin: 0 auto 10px
+    order: -1
 
 @media only screen and (max-width: 360px)
   .about-diagram__img

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Агенство инноваций Москвы</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#23234E">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#23234E">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#23234E">
+  <meta name="theme-color" content="#23234E">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+
+<div class="wrapper">
+  <!--### HEADER ###-->
+
+  <div class="right-sidebar">
+    <video loop muted autoplay class="video-bg">
+      <source src="video-bg.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+
+      <h1 class="d-none-tablet">Мероприятия</h1>
+
+      <ul class="menu my-ul">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="projects.html">Проекты</a></li>
+        <li><a href="news.html">Новости</a></li>
+        <li><a href="events.html">Мероприятия</a></li>
+        <li><a href="analytics.html">Аналитика</a></li>
+        <li><a href="about.html">Об Агентстве</a></li>
+      </ul>
+
+      <div class="header-nav">
+        <div class="search-wrapper">
+
+          <form method="post" class="form-search">
+            <label><input type="text" placeholder="Поиск по сайту" name="search"></label>
+            <button type="submit" class="btn-search btn-border btn">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#search"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+        <a href="#" class="lang-links btn-border btn">en</a>
+      </div>
+
+      <div class="btn-burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+  <!--### HEADER end ###-->
+
+
+  <div class="content content-wrapper">
+    <!--### SECTION  ###-->
+    <div class="projects-section article-section events-section">
+      <div class="container">
+        <h1 class="d-flex-tablet">Мероприятия</h1>
+
+        <div class="event-line">
+          <div class="events-tab">
+            <a href="events.html" class="events-tab-link">
+              <span class="events-tab-link__icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#tab-icon1"></use></svg></span>
+              <span class="events-tab-link__text">Список</span>
+            </a>
+            <a href="events-calendar.html" class="events-tab-link active">
+              <span class="events-tab-link__icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#tab-icon2"></use></svg></span>
+              <span class="events-tab-link__text">Календарь</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="event-content">
+          <div class="event-calendar">
+            <div class="event-calendar-head">
+              <a href="#" class="event-calendar-nav event-calendar-prev">
+                <span class="event-calendar-nav__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></span>
+                <span class="event-calendar-nav__text">МАРТ 2022</span>
+              </a>
+
+              <div class="event-calendar__title">Апрель 2022</div>
+
+              <a href="#" class="event-calendar-nav event-calendar-next">
+                <span class="event-calendar-nav__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
+                <span class="event-calendar-nav__text">МАЙ 2022</span>
+              </a>
+            </div>
+
+            <div class="event-calendar-body">
+              <div class="tr">
+                <div class="td">
+                  <div class="event-calendar-date event-calendar-date__prev">30</div>
+                </div>
+                <div class="td">
+                  <div class="event-calendar-date event-calendar-date__prev">31</div>
+                </div>
+                <div class="td">
+                  <div class="event-calendar-date">1</div>
+                </div>
+                <div class="td">
+                  <div class="event-calendar-date">2</div>
+                </div>
+                <div class="td">
+                  <div class="event-calendar-date">3</div>
+                  <a href="event-list.html" class="event-calendar-box">
+                    <span class="event-calendar-box__img"><img src="img/events1.jpg" alt=""></span>
+                    <span class="event-calendar-box__name">Презентация стартапа для иностранных инвесторов</span>
+                  </a>
+                </div>
+                <div class="td">
+                  <div class="event-calendar-date event-calendar-date__holiday">4</div>
+                </div>
+                <div class="td">
+                  <div class="event-calendar-date event-calendar-date__holiday">5</div>
+                </div>
+              </div>
+              <div class="tr">
+                <div class="td">
+                  <div class="event-calendar-date">6</div>
+                </div>
+                <div class="td">
+                  <div class="event-calendar-date">7</div>
+                </div>
+                <div class="td">
+                  <div class="event-calendar-date">8</div>
+                </div>
+                <div class="td">
+                  <div class="event-calendar-date">9</div>
+                </div>
+                <div class="td">
+                  <div class="event-calendar-date">10</div>
+                </div>
+                <div class="td">
+                  <div class="event-calendar-date event-calendar-date__holiday">11</div>
+                  <a href="event-list.html" class="event-calendar-box">
+                    <span class="event-calendar-box__img"><img src="img/events2.jpg" alt=""></span>
+                    <span class="event-calendar-box__name">Эффективная онлайн-коммуникация  с партнерами</span>
+                  </a>
+                </div>
+                <div class="td">
+                  <div class="event-calendar-date event-calendar-date__holiday">12</div>
+                </div>
+              </div>
+              <div class="tr">
+                <div class="td">
+                  <div class="event-calendar-date">13</div>
+                </div>
+                <div class="td">
+                  <div class="event-calendar-date">14</div>
+                </div>
+                <div class="td">
+                  <div class="event-calendar-date">15</div>
+                  <a href="event-list.html" class="event-calendar-box">
+                    <span class="event-calendar-box__img"><img src="img/events3.jpg" alt=""></span>
+                    <span class="event-calendar-box__name">Unit-экономика или маржинальный анализ?</span>
+                  </a>
+                </div>
+                <div class="td">
+                  <div class="event-calendar-date">16</div>
+                </div>
+                <div class="td">
+                  <div class="event-calendar-date">17</div>
+                </div>
+                <div class="td">
+                  <div class="event-calendar-date event-calendar-date__holiday">18</div>
+                </div>
+                <div class="td">
+                  <div class="event-calendar-date event-calendar-date__holiday">19</div>
+                </div>
+              </div>
+              <div class="tr">
+                <div class="td">
+                  <div class="event-calendar-date">20</div>
+                </div>
+                <div class="td">
+                  <div class="event-calendar-date">21</div>
+                </div>
+                <div class="td">
+                  <div class="event-calendar-date">22</div>
+                </div>
+                <div class="td">
+                  <div class="event-calendar-date">23</div>
+                </div>
+                <div class="td">
+                  <div class="event-calendar-date">24</div>
+                </div>
+                <div class="td">
+                  <div class="event-calendar-date event-calendar-date__holiday">25</div>
+                </div>
+                <div class="td">
+                  <div class="event-calendar-date event-calendar-date__holiday">26</div>
+                </div>
+              </div>
+              <div class="tr">
+                <div class="td">
+                  <div class="event-calendar-date">27</div>
+                </div>
+                <div class="td">
+                  <div class="event-calendar-date">28</div>
+                </div>
+                <div class="td">
+                  <div class="event-calendar-date">29</div>
+                </div>
+                <div class="td">
+                  <div class="event-calendar-date">30</div>
+                </div>
+                <div class="td">
+                  <div class="event-calendar-date event-calendar-date__next">1</div>
+                </div>
+                <div class="td">
+                  <div class="event-calendar-date event-calendar-date__next event-calendar-date__holiday">2</div>
+                </div>
+                <div class="td">
+                  <div class="event-calendar-date event-calendar-date__next event-calendar-date__holiday">3</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <!--### SECTION END ###-->
+
+
+    <div class="fixed-block">
+      <div class="fixed-block-wrapper">
+        <div class="fixed-block__top">
+          <form method="post" class="form-search">
+            <label><input type="text" placeholder="Поиск по сайту" name="search"></label>
+            <button type="submit" class="btn-search btn-border btn">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#search"></use>
+              </svg>
+            </button>
+          </form>
+          <ul class="menu my-ul">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="projects.html">Проекты</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="events.html">Мероприятия</a></li>
+            <li><a href="analytics.html">Аналитика</a></li>
+            <li><a href="about.html">Об Агентстве</a></li>
+          </ul>
+        </div>
+        <div class="fixed-block__bottom">
+          <div class="address-box">123242, г. Москва, Новинский бул., 31</div>
+          <ul class="list-social my-ul">
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#telegram"></use>
+              </svg>
+            </a></li>
+          </ul>
+          <div class="copyright">© ГБУ «Агентство инноваций Москвы»
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--### FOOTER ###-->
+  <footer>
+    <div class="container">
+      <ul class="footer-menu my-ul">
+        <li><a href="projects.html" class="font-700">Проекты</a></li>
+        <li><a href="analytics.html" class="font-700">Аналитика</a></li>
+        <li><a href="#" class="font-700">Мероприятия</a></li>
+      </ul>
+
+      <ul class="footer-menu my-ul">
+        <li><a href="news.html" class="font-300">Новости</a></li>
+        <li><a href="about.html" class="font-300">Об Агентстве</a></li>
+        <li><a href="contacts.html" class="font-300">Контакты</a></li>
+      </ul>
+
+      <div class="footer-box">
+        <a href="contacts.html" class="address">123242, г. Москва, Новинский бул., 31</a>
+
+        <a href="tel:+74992259252" class="phone">+7 (499) 225 9252</a>
+      </div>
+
+      <div class="organizations">
+        <a href="#" class="organizations-item"><img src="img/company-logo1.svg" alt=""></a>
+        <a href="#" class="organizations-item"><img src="img/company-logo2.svg" alt=""></a>
+      </div>
+
+      <div class="copyright">
+        <p>© ГБУ "Агентство инноваций Москвы", 2021 г.</p>
+      </div>
+    </div>
+  </footer>
+  <!--### FOOTER END ###-->
+
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+<script src="js/common.js"></script>
+
+</body>
+</html>

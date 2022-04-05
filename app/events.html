@@ -85,146 +85,244 @@
       <div class="container">
         <h1 class="d-flex-tablet">Мероприятия</h1>
 
-        <div class="article-wrapper">
-          <div class="article-content">
-
-            <div class="article-img"><img src="img/event-img.jpg" alt=""></div>
-            <h3>Презентация стартапа для иностранных инвесторов</h3>
-
-            <div class="box-text">
-              <p>Мастер-класс в онлайн-формате для технологических предпринимателей о том, как правильно подготовить
-                презентацию IT-стартапа. Также участники вместе со спикером разберут кейсы стартап-питчей в буквальном
-                смысле на миллион долларов: AirBnB, Front, Trym и Cadee.</p>
-            </div>
-
-            <div class="article-footer">
-              <div class="schedule">
-<!--                <ul class="schedule-list my-ul">-->
-<!--                  <li><a href="#"><img src="img/vk.svg" alt=""></a></li>-->
-<!--                  <li><a href="#"><img src="img/ok.svg" alt=""></a></li>-->
-<!--                  <li><a href="#"><img src="img/twitter.svg" alt=""></a></li>-->
-<!--                  <li><a href="#"><img src="img/whatsapp.svg" alt=""></a></li>-->
-<!--                  <li><a href="#"><img src="img/telegram.svg" alt=""></a></li>-->
-<!--                </ul>-->
-                <script src="https://yastatic.net/share2/share.js"></script>
-                <div class="ya-share2" data-curtain data-services="vkontakte,odnoklassniki,telegram,twitter,whatsapp"></div>
-                <p>— поделитесь с друзьями!</p>
-              </div>
-            </div>
+        <div class="event-line">
+          <div class="events-tab">
+            <a href="events.html" class="events-tab-link active">
+              <span class="events-tab-link__icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#tab-icon1"></use></svg></span>
+              <span class="events-tab-link__text">Список</span>
+            </a>
+            <a href="events-calendar.html" class="events-tab-link">
+              <span class="events-tab-link__icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#tab-icon2"></use></svg></span>
+              <span class="events-tab-link__text">Календарь</span>
+            </a>
           </div>
 
-          <div class="news-sidebar">
-            <div class="events-form">
-              <ul class="events-list my-ul">
-                <li>
-                  <span>Формат:</span>
-                  <p><strong>Оффлайн</strong></p>
-                </li>
-                <li>
-                  <span>Дата и время:</span>
-                  <p><strong>10 февраля, 19:00</strong></p>
-                </li>
-                <li>
-                  <span>Место:</span>
-                  <p><strong>Красный Октябрь: Берсеневская набережная, 6/3</strong></p>
-                </li>
-              </ul>
+          <div class="event-filter">
+            <a href="#" class="event-filter-link active">Ближайшие</a>
+            <a href="#" class="event-filter-link">Прошедшие</a>
+          </div>
+        </div>
 
-              <a href="#" class="btn btn-blue-black">Зарегистрироваться</a>
-
-<!--              <a href="#" class="btn btn-border-blue">Регистрация закрыта</a>-->
+        <div class="event-content">
+          <div class="home-slider">
+            <div class="slide">
+              <a href="#" class="home-slider-item"><img src="img/slide3.jpg" alt="">
+                <img src="img/slide-mobile.jpg" class="slide-mob" alt="">
+              </a>
+            </div>
+            <div class="slide">
+              <a href="#" class="home-slider-item"><img src="img/slide4.jpg" alt="">
+                <img src="img/slide-mobile2.png" class="slide-mob" alt="">
+              </a>
+            </div>
+            <div class="slide">
+              <a href="#" class="home-slider-item"><img src="img/slide5.jpg" alt="">
+                <img src="img/slide-mobile3.png" class="slide-mob" alt="">
+              </a>
             </div>
           </div>
         </div>
 
+        <div class="w-100">
+          <div class="row">
+            <div class="col-3">
+              <div class="event-box">
+                <a href="event-list.html" class="event-box__img"><img src="img/event1.jpg" alt=""></a>
+                <div class="event-box__body">
+                  <div class="event-box__top">
+                    <ul class="list-tags my-ul">
+                      <li><a href="#">выставка</a></li>
+                    </ul>
+                    <div class="event-box__date">31 марта 10:00-16:00</div>
+                  </div>
+                  <a href="event-list.html" class="event-box__name">Выставка «Инновационные решения в сфере безопасности
+                    здоровья»</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="event-box">
+                <a href="event-list.html" class="event-box__img"><img src="img/event2.jpg" alt=""></a>
+                <div class="event-box__body">
+                  <div class="event-box__top">
+                    <ul class="list-tags my-ul">
+                      <li><a href="#">семинар</a></li>
+                    </ul>
+                    <div class="event-box__date">14 марта 19:30-21:00</div>
+                  </div>
+                  <a href="event-list.html" class="event-box__name">Антистресс. Как успешно противостоять выгоранию на
+                    работе</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="event-box">
+                <a href="event-list.html" class="event-box__img"><img src="img/event3.jpg" alt=""></a>
+                <div class="event-box__body">
+                  <div class="event-box__top">
+                    <ul class="list-tags my-ul">
+                      <li><a href="#">семинар</a></li>
+                    </ul>
+                    <div class="event-box__date">10 марта 19:30-21:00</div>
+                  </div>
+                  <a href="event-list.html" class="event-box__name">Профессия в IT как проект</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="event-box">
+                <a href="event-list.html" class="event-box__img"><img src="img/event4.jpg" alt=""></a>
+                <div class="event-box__body">
+                  <div class="event-box__top">
+                    <ul class="list-tags my-ul">
+                      <li><a href="#">Форум</a></li>
+                    </ul>
+                    <div class="event-box__date">3 марта 11:30-18:00
+                    </div>
+                  </div>
+                  <a href="event-list.html" class="event-box__name">Форум «Женский бизнес»Выставка «Инновационные
+                    решения в сфере безопасности здоровья»</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="event-box">
+                <a href="event-list.html" class="event-box__img"><img src="img/event5.jpg" alt=""></a>
+                <div class="event-box__body">
+                  <div class="event-box__top">
+                    <ul class="list-tags my-ul">
+                      <li><a href="#">семинар</a></li>
+                    </ul>
+                    <div class="event-box__date">22 февраля 10:00-22:00</div>
+                  </div>
+                  <a href="event-list.html" class="event-box__name">День самозанятости</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="event-box">
+                <a href="event-list.html" class="event-box__img"><img src="img/event6.jpg" alt=""></a>
+                <div class="event-box__body">
+                  <div class="event-box__top">
+                    <ul class="list-tags my-ul">
+                      <li><a href="#">Мастер-класс</a></li>
+                    </ul>
+                    <div class="event-box__date">11 февраля 19:30-21:00</div>
+                  </div>
+                  <a href="event-list.html" class="event-box__name">50 критических ошибок при подборе одежды для
+                    предпринимателя</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="event-box">
+                <a href="event-list.html" class="event-box__img"><img src="img/event7.jpg" alt=""></a>
+                <div class="event-box__body">
+                  <div class="event-box__top">
+                    <ul class="list-tags my-ul">
+                      <li><a href="#">Форум</a></li>
+                    </ul>
+                    <div class="event-box__date">19 января 11:30-18:00</div>
+                  </div>
+                  <a href="event-list.html" class="event-box__name">Форум «Эпоха личностей: будь в тренде 2022
+                    года!»</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="event-box">
+                <a href="event-list.html" class="event-box__img"><img src="img/event8.jpg" alt=""></a>
+                <div class="event-box__body">
+                  <div class="event-box__top">
+                    <ul class="list-tags my-ul">
+                      <li><a href="#">Бизнес-встреча</a></li>
+                    </ul>
+                    <div class="event-box__date">27 ДЕКАБРЯ 19:00-21:30</div>
+                  </div>
+                  <a href="event-list.html" class="event-box__name">Встреча клуба Business Update</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="event-box">
+                <a href="event-list.html" class="event-box__img"><img src="img/event9.jpg" alt=""></a>
+                <div class="event-box__body">
+                  <div class="event-box__top">
+                    <ul class="list-tags my-ul">
+                      <li><a href="#">Форум</a></li>
+                    </ul>
+                    <div class="event-box__date">20 декабря 10:00-16:00
+                    </div>
+                  </div>
+                  <a href="event-list.html" class="event-box__name">Форум «Инновации в транспорте»</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="event-box">
+                <a href="event-list.html" class="event-box__img"><img src="img/event10.jpg" alt=""></a>
+                <div class="event-box__body">
+                  <div class="event-box__top">
+                    <ul class="list-tags my-ul">
+                      <li><a href="#">Бизнес-встреча</a></li>
+                    </ul>
+                    <div class="event-box__date">9 ДЕКАБРЯ 15:00-19:00</div>
+                  </div>
+                  <a href="event-list.html" class="event-box__name">MasterMaind Start: "Формула бизнеса"</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="event-box">
+                <a href="event-list.html" class="event-box__img"><img src="img/event11.jpg" alt=""></a>
+                <div class="event-box__body">
+                  <div class="event-box__top">
+                    <ul class="list-tags my-ul">
+                      <li><a href="#">Сессия</a></li>
+                    </ul>
+                    <div class="event-box__date">29 НОЯБРЯ 09:30-15:00</div>
+                  </div>
+                  <a href="event-list.html" class="event-box__name">Moscow Export Day</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="event-box">
+                <a href="event-list.html" class="event-box__img"><img src="img/event1.jpg" alt=""></a>
+                <div class="event-box__body">
+                  <div class="event-box__top">
+                    <ul class="list-tags my-ul">
+                      <li><a href="#">Public Talk</a></li>
+                    </ul>
+                    <div class="event-box__date">29 НОЯБРЯ 19:00-22:30</div>
+                  </div>
+                  <a href="event-list.html" class="event-box__name">Business SandBox: «Как построить технологический
+                    бизнес с капитализацией в 1 млрд»</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="navigation-page">
+            <a href="#" class="navigation-page-link link-arrow">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#arrow-left"></use>
+              </svg>
+            </a>
+            <div class="navigation-page-val">1/27</div>
+            <a href="#" class="navigation-page-link link-arrow">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#arrow-right"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
     <!--### SECTION END ###-->
 
-    <!--### SECTION news ###-->
-    <section class="news other-news other-events">
-      <div class="container">
-        <div class="title-line">
-          <h2>Другие мероприятия</h2>
-        </div>
-
-        <div class="events-wrapper">
-          <div class="events-card">
-            <div class="events-card__img"><img src="img/events1.jpg" alt=""></div>
-            <div class="events-card__body">
-              <div class="events-card__top">
-                <div class="date">25 ЯНВАРЯ</div>
-                <ul class="list-tags my-ul">
-                  <li><a href="#">#Бизнес</a></li>
-                  <li><a href="#">#АНАЛИТИКА</a></li>
-                </ul>
-              </div>
-
-              <a href="#" class="events-card__name">Презентация стартапа для иностранных инвесторов</a>
-              <div class="box-text">
-                <p>В популярном корпоративном мессенджере Microsoft Teams нашлись важные уязвимости. Это еще одно
-                  напоминание о том, что публичные сервисы не дают гарантий...</p>
-              </div>
-            </div>
-          </div>
-          <div class="events-card">
-            <div class="events-card__img"><img src="img/events2.jpg" alt=""></div>
-            <div class="events-card__body">
-              <div class="events-card__top">
-                <div class="date">25 ЯНВАРЯ</div>
-                <ul class="list-tags my-ul">
-                  <li><a href="#">#Бизнес</a></li>
-                </ul>
-              </div>
-
-              <a href="#" class="events-card__name">Эффективная онлайн-коммуникация с зарубежными партнерами</a>
-              <div class="box-text">
-                <p>Воркшоп, посвященный эффективной коммуникации с иностранными партнерами: формулам и инструментам
-                  общения онлайн. </p>
-              </div>
-            </div>
-          </div>
-          <div class="events-card events-card-last">
-            <div class="events-card__img"><img src="img/events3.jpg" alt=""></div>
-            <div class="events-card__body">
-              <div class="events-card__top">
-                <div class="date">12 февраля</div>
-                <ul class="list-tags my-ul">
-                  <li><a href="#">#ИННОВАЦИИ</a></li>
-                  <li><a href="#">#ИНВЕСТИЦИИ</a></li>
-                </ul>
-              </div>
-
-              <a href="#" class="events-card__name">Unit-экономика или маржинальный анализ?
-              </a>
-              <div class="box-text">
-                <p>Тренинг для предпринимателей и стартапов, которые хотят узнать, как связаны между собой
-                  юнит-экономика и маржинальный анализ, как правильно вычислить прибыль за период и узнать пожизненную
-                  стоимость клиента.</p>
-              </div>
-            </div>
-          </div>
-
-          <a href="#" class="btn btn-border-blue btn-calendar">Календарь мероприятий</a>
-        </div>
-
-        <div class="calendar-sidebar">
-          <div class="datepicker"></div>
-          <div class="tags">
-<!--            <a href="#" class="tags-links active">Все</a>-->
-            <a href="#" class="tags-links">Бизнес</a>
-            <a href="#" class="tags-links">Город</a>
-            <a href="#" class="tags-links">Молодёжь</a>
-            <a href="#" class="tags-links">стартапы</a>
-            <a href="#" class="tags-links">Молодые специалисты</a>
-            <a href="#" class="tags-links">Корпорации</a>
-            <a href="#" class="tags-links">МСП</a>
-          </div>
-        </div>
-
-      </div>
-    </section>
-    <!--### SECTION END ###-->
 
     <div class="fixed-block">
       <div class="fixed-block-wrapper">
